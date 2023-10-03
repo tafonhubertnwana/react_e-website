@@ -1,0 +1,113 @@
+/* Navbar 1 */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #eeecec ;
+}
+
+.navbar .logo{
+  font-size: 30px;
+  color: rgb(255, 136, 0);
+  margin-left: 0;
+  text-align: left;
+  text-decoration: none;
+  font-weight: 900;
+  margin-left: 30%;
+}
+
+.navbar form{
+  width: 50%;
+  align-content: center;
+  display: flex;
+  border-radius: 15px;
+  background: #fafafa;
+  margin-left: 7%;
+}
+
+.navbar form input{
+  width: 100%;
+  background-color: transparent;
+  border-radius: 30px;
+  height: 100%;
+  border: none;
+  margin-left: 10px;
+  outline: 10px;
+  font-size: 18px;
+}
+
+.navbar .fa-magnifying-glass{
+  padding-top: 15px;
+  margin-right: 10px;
+  margin-left: 20px
+}
+
+.navbar ul{
+  display: inline-flex;
+  padding: 10px;
+}
+
+.navbar ul li{
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.navbar ul li .fa-heart{
+  padding-right: 30px;
+}
+
+.navbar button{
+  padding: 1px 10px;
+  background-color: #B38B59;
+  color: white;
+  font-size: 19px;
+  cursor: pointer;
+  margin-left: 30px;
+  border-radius: 10px;
+  transition: opacity 0.15s;
+  border-style: none;
+  margin-right: 8%;
+}
+
+.fa-user{
+  padding-right: 8px;
+}
+
+.navbar button:hover{
+  opacity: 0.6;
+}
+
+.navbar button:active{
+  background-color: #d6d1c9;
+  color: black;
+}
+
+
+/* Navbar 2 */
+nav{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-bottom: 1px solid #eeecec ;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul li{
+  display: block;
+  padding-right: 10%;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+  font-weight: 700;
+}
