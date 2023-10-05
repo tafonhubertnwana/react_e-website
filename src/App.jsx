@@ -13,18 +13,19 @@ import { Contact } from './Contact_component/contact';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/brand" element={<Brand />} />
-        <Route path='/product' element= {<Product />} />
-        <Route path='/about' element={<About />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path='/contact' element={<Contact />} />  
-      </Routes>
+    <div>
+      <Navbar />  
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/brand" element={<Brand />} />
+          <Route path='/product' element= {<Product />} />
+          <Route path='/about' element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path='/contact' element={<Contact />} />  
+        </Routes>
+        
     </div>
-  );
-}
+  )
+};
 
 export default App;
