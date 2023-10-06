@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const About = () => {
+ const About = () => {
   return (
     <div>about</div>
   )
 }
+
+export default About
