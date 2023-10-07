@@ -1,11 +1,11 @@
 import React from 'react'
 import './home.css'
-import { Navbar } from './navbar_component/navbar';
+import Slide from './Slide_component/slide';
 
 const Home = () => {
   return (
     <> 
-  
+      <Slide  />
       <p>What is wrong</p>
     </>   
   )      

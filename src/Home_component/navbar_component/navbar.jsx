@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './navbar.css'
+import { FaSearch, FaShoppingCart, FaUser, FaRegHeart  } from 'react-icons/fa'
 
 
 
@@ -12,13 +13,13 @@ export const Navbar = () => {
           <p><Link to='/' className = 'logo'>HTMobile</Link></p>
           <form>
             <input type="text" placeholder="Search...." />
-            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="" className='fasearch'><FaSearch /></a>
           </form>
           <ul>
-            <li><i class="fa-solid fa-heart"></i></li>
-            <li><i class="fa-solid fa-cart-shopping"></i></li>
+            <li className='faregheart'><FaRegHeart /></li>
+            <li><FaShoppingCart /></li>
           </ul>
-          <button><i class="fa-solid fa-user"></i>Login</button>
+          <button className='fauser'><FaUser />Login</button>
         </section>
       </div>
       <div>
