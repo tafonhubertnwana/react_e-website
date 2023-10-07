@@ -1,8 +1,21 @@
 .carousel-element{
-  width: ;
+  position: relative;
+  width: 800px;
+  height: 450px;
+  
 }
 
 .img-container img{
   width: 200px;
   height: 350px;
+}
+
+.detail p{
+  color: #ca3232;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
