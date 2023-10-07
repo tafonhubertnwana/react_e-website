@@ -75,10 +75,12 @@
   transition: opacity 0.15s;
   border-style: none;
   margin-right: 8%;
+  padding-left: 30px;
+
 }
 
-.fauser{
-  padding-right: 8px;
+.navbar .fauser{
+  padding-right: 40px;
 }
 
 .navbar button:hover{
@@ -100,12 +102,11 @@ nav{
 
 nav ul{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 nav ul li{
   display: block;
-  padding-right: 10%;
 }
 
 nav ul li a{

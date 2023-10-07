@@ -5,8 +5,8 @@ import { FaSearch, FaShoppingCart, FaUser, FaRegHeart  } from 'react-icons/fa'
 
 
 
-export const Navbar = () => {
-  return (
+export const Navbar = () =>{
+  return(
     <>
       <div>
         <section className='navbar'>
@@ -19,10 +19,8 @@ export const Navbar = () => {
             <li className='faregheart'><FaRegHeart /></li>
             <li><FaShoppingCart /></li>
           </ul>
-          <button className='fauser'><FaUser />Login</button>
+          <button className='fauser'><FaUser />  Login</button>
         </section>
-      </div>
-      <div>
         <nav>
           <ul>
             <li><Link to= '/'>Home</Link></li>
@@ -32,7 +30,7 @@ export const Navbar = () => {
             <li><Link to='/about'>About</Link></li>
             <li><Link to='/contact'>Contact</Link></li>
           </ul>
-        </nav>
+        </nav> 
       </div>
     </>
   )

@@ -6,11 +6,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 //import Image
 
-import image1 from '../Slide_component/image_slider/iphone_slider1.jpeg'
-import image2 from '../Slide_component/image_slider/samsung_slider.jpeg'
-import image3 from '../Slide_component/image_slider/huawei_slider.jpeg'
-import image4 from '../Slide_component/image_slider/redmi_slider3.jpeg'
-import image5 from '../Slide_component/image_slider/vivo_slider.jpeg'
+import image1 from '../Slide_component/image_slider/iphone_1.png'
+import image2 from '../Slide_component/image_slider/samsung.jpg'
+import image3 from '../Slide_component/image_slider/oneplus.jpg'
+import image4 from '../Slide_component/image_slider/vivo.jpg'
 
 const settings = {
   showArrows: false,
@@ -34,35 +33,45 @@ const Slide = () => {
         <Carousel {...settings}>
           <div className="img-container">
             <div className="detail">
+              <h1> titanium </h1>
+              <p>Iphone 15Pro</p>
+              <button>Shop now</button>
+            </div>
+            <div className="image">
               <img src= {image1} alt='photo1' />
-              <p>Iphone</p>
-            </div>
+            </div> 
           </div>
           <div className="img-container">
             <div className="detail">
+              <h1>Galaxy S23 Series</h1>
+              <p>Get 50% off on our Own Epic</p>
+              <button>Buy Now</button>
+            </div>
+            <div className="image">
               <img src= {image2} alt='photo1' />
-              <p>Iphone</p>
-            </div>
+            </div> 
           </div>
           <div className="img-container">
             <div className="detail">
-              <img src= {image3} alt='photo1' />
-              <p>Iphone</p>
+              <h1>OnePlus Nord CE 3Lite 5G</h1>
+              <p>Larger than Life</p>
+              <button>Order Now</button>
             </div>
-          </div>
-          <div className="img-container">
-            <div className="detail">
+            <div className="image">
               <img src= {image4} alt='photo1' />
-              <p>Iphone</p>
-            </div>
+            </div> 
           </div>
           <div className="img-container">
             <div className="detail">
-              <img src= {image5} alt='photo1' />
-              <p>Iphone</p>
+              <h1>Vivo V27 Pro </h1>
+              <p>Delight Every Moment</p>
+              <p>Get benefit up to 5% on sales</p>
+              <button>check it Out</button>
             </div>
-          </div>
-          
+            <div className="image">
+              <img src= {image3} alt='photo1' />
+            </div> 
+          </div>  
         </Carousel>
       </div>
     </>
