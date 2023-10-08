@@ -6,10 +6,15 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 //import Image
 
-import image1 from '../Slide_component/image_slider/iphone_1.png'
+import image1 from '../Slide_component/image_slider/iphone.jpg'
 import image2 from '../Slide_component/image_slider/samsung.jpg'
 import image3 from '../Slide_component/image_slider/oneplus.jpg'
 import image4 from '../Slide_component/image_slider/vivo.jpg'
+
+//image for after side bar
+import service1 from '../Slide_component/image_slider/safe and secure.png'
+import service2 from '../Slide_component/image_slider/transport.png'
+import service3 from '../Slide_component/image_slider/best price.png'
 
 const settings = {
   showArrows: false,
@@ -73,6 +78,30 @@ const Slide = () => {
             </div> 
           </div>  
         </Carousel>
+      </div>
+      <div>
+        <div className="service-container">
+          <div className="service-detail">
+            <img src= {service1} alt=" safe and secure" />
+            <h1>Safe and Secure</h1>
+            <p>Trust us with the best quality and original product for you</p>
+          </div>
+        </div>
+        <div className="service-container">
+          <div className="service-detail">
+            <img src= {service2} alt=" transport" />
+            <h1>Instant Transportation</h1>
+            <p>We are giving free transportation on both withing and out of the country</p>
+
+          </div>
+        </div>
+        <div className="service-container">
+          <div className="service-detail">
+            <img src= {service3} alt=" best price" />
+            <h1>Best Price</h1>
+            <p>Get quality and original phones at a very affortable price and rate</p>
+          </div>
+        </div>
       </div>
     </>
   
