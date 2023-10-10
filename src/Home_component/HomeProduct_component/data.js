@@ -60,8 +60,8 @@ export const productData = [
 export const productDataTwo = [
   {
     id:1,
-    imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1696933813/galazy_Note_8_kmgata.png",
-    name: "Galaxy Note 8",
+    imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1696938627/vivo_v9_pro_ywcgci.png",
+    name: "Vivo V9 Pro",
     price: "150000frs"
   },
   {
@@ -93,5 +93,51 @@ export const productDataTwo = [
     imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1696933320/Galaxy_f04_bnkzy4.png",
     name: "Galaxy F04",
     price: "150000frs"
+  }
+]
+
+
+export const productDataThree = [
+  {
+    id:1,
+    imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1696933813/galazy_Note_8_kmgata.png",
+    name: "Galaxy Note 8",
+    price: "150000frs",
+    rate: "50% OFF"
+  },
+  {
+    id:2,
+    imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1696938812/vivo_Y83_pro_a8qxze.png",
+    name: "Vivo Y83 Pro",
+    price: "150000frs",
+    rate: "50% OFF"
+  },
+  {
+    id:3,
+    imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1696938701/vivo_v11_pro_uak8he.png",
+    name: "Vivo V11 Pro",
+    price: "150000frs",
+    rate: "25% OFF"
+  },
+  {
+    id:4,
+    imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1696933437/Galaxy_f54_5g_s1dkbl.png",
+    name: "Galaxy F54 5G",
+    price: "150000frs",
+    rate: "50% OFF"
+  },
+  {
+    id:5,
+    imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1696901936/Apple_XR_ygxer2.png",
+    name: "Apple Iphone XR",
+    price: "150000frs",
+    rate: "50% OFF"
+  },  
+  {
+    id:6,
+    imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1696933320/Galaxy_f04_bnkzy4.png",
+    name: "Galaxy F04",
+    price: "150000frs",
+    rate: "50% OFF"
   }
 ]

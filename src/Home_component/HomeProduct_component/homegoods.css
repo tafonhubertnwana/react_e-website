@@ -13,6 +13,7 @@
   margin-left: 40px;
   font-weight: 800px;
   padding-top: 15px;
+  padding-bottom: 10px
 }
 
 /* Product section*/
@@ -32,6 +33,16 @@
   height: 250px;
 }
 
+.rate{
+  background-color: #ffcb74;
+  width:90px;
+  border-top-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .product-feature h2{
   font-size: 18px;
   text-align: center;
@@ -48,7 +59,7 @@
   text-align: center;
   padding: 10px 0;
   background-color:#b38b59;
-  color: white;
+  color: rgb(2, 2, 2);
   margin-bottom: 10px;
   align-content: center;
   margin-left: 50px;
@@ -56,11 +67,11 @@
 
 /*Banner*/
 .banner{
-  margin: 40px 0;
+  margin-top: 40px;
   width: 100%;
 }
 
 .banner img{
   width: 1000px;
-  margin-left: 13%;
+  margin-left: 15%;
 }
