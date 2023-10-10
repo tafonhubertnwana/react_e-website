@@ -1,5 +1,6 @@
 .feature-categories{
   margin-top: 60px;
+  width: 100%;
 }
 
 .feature-categories h1{
@@ -45,10 +46,21 @@
   width: 150px;
   font-size: 18px;
   text-align: center;
-  padding: 15px 0;
-  background-color: black;
+  padding: 10px 0;
+  background-color:#b38b59;
   color: white;
   margin-bottom: 10px;
   align-content: center;
   margin-left: 50px;
+}
+
+/*Banner*/
+.banner{
+  margin: 40px 0;
+  width: 100%;
+}
+
+.banner img{
+  width: 1000px;
+  margin-left: 13%;
 }
