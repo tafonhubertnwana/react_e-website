@@ -1,0 +1,54 @@
+.feature-categories{
+  margin-top: 60px;
+}
+
+.feature-categories h1{
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.feature-categories p{
+  font-size: 25px;
+  margin-left: 40px;
+  font-weight: 800px;
+  padding-top: 15px;
+}
+
+/* Product section*/
+
+.product-feature{
+  border: 1px solid transparent;
+  width: 250px;
+  margin-left: 50px;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.product-feature img{
+  width: 270px;
+  height: 270px;
+}
+
+.product-feature h2{
+  font-size: 18px;
+  text-align: center;
+}
+
+.product-feature .price{
+  text-align:center
+}
+
+.product-feature button{
+  border: none;
+  width: 150px;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 0;
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+  align-content: center;
+  margin-left: 50px;
+}
