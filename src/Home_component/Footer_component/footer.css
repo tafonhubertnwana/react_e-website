@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-around;
   background-color: #fafafa;
+  padding-bottom: 60px;
 }
 
 
@@ -22,7 +23,6 @@
 }
 
 .footer-col .icons li{
-  background-color: green;
   padding: 5px;
   border-radius: 50px
 }
@@ -41,4 +41,9 @@
 .footer-col ul li{
   padding-top: 5px;
   cursor: pointer;
+}
+
+.footer-container .copyright{
+  padding-top: 20px;
+  background-color: #fafafa;
 }

@@ -56,8 +56,10 @@ const Footer = () => {
                 <li>Cookie Policy</li>
               </ul>
             </div>
-          
+            
           </div>
+          <p classnName="copyright">Copyright &#169; 2023 HTMobile All rights reserved
+</p>
         </div>
 
       </div>
