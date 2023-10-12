@@ -58,7 +58,8 @@ const Footer = () => {
             </div>
             
           </div>
-          <p classnName="copyright">Copyright &#169; 2023 HTMobile All rights reserved
+          <p classnName="copyright
+          ">Copyright &#169; 2023 HTMobile All rights reserved
 </p>
         </div>
 

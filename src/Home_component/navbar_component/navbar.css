@@ -101,11 +101,44 @@ nav{
 }
 
 nav ul{
-  display: flex;
-  justify-content: space-around;
+  list-style: none;
+  background-color: purple;
 }
 
 nav ul li{
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  display:bloc;
+  padding: 20px 25px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+nav ul li ul.dropdown li{
+  display:block;
+}
+
+nav ul li ul.dropdown{
+  width:100%;
+  background-color: #B38B59;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+nav ul a:hover{
+  background: green
+}
+
+nav ul li:hover ul.dropdown{
+  display:block;
+}
+/*nav ul li{
   display: block;
 }
 
@@ -113,4 +146,4 @@ nav ul li a{
   text-decoration: none;
   color: rgb(7, 7, 7);
   font-weight: 700;
-}
+}*/

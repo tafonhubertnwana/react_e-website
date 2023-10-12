@@ -24,7 +24,14 @@ export const Navbar = () =>{
         <nav>
           <ul>
             <li><Link to= '/'>Home</Link></li>
-            <li><Link to= '/brand'>Brand</Link></li>
+            <li><Link to= '/brand'>Brand</Link>
+              <ul className="dropdown">
+                  <li>Iphone</li>
+                  <li>Samsung</li>
+                  <li>Google Pixel</li                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                >
+                  <li>Vivo</li>
+              </ul>
+            </li>
             <li><Link to='/product'>Products</Link></li>
             <li><Link to='/blog'>Blog</Link></li>
             <li><Link to='/about'>About</Link></li>
