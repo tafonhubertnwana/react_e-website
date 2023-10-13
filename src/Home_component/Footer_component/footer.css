@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  background-color: #fafafa;
+  background-color: rgba(128, 128, 128, 0.452);
   padding-bottom: 60px;
 }
 
@@ -46,7 +46,7 @@
 
 .footer-col h2{
   padding-top: 30px;
-  color: darkgrey;  
+  color: black;  
   
 }
 
@@ -66,7 +66,8 @@
   cursor: pointer;
 }
 .footer-container .copyright{
-  padding-top: 10px;
-  background-color: #fafafa;
+  border-top:1px solid rgb(70, 69, 69);
+  padding-top: 5px;
+  background-color: rgba(128, 128, 128, 0.452);;
   text-align: center;
 }

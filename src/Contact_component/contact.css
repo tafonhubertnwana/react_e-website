@@ -1,0 +1,121 @@
+/*banner*/
+.contact-containter{
+  padding:0;
+  margin:0;
+  width: 100%;
+}
+
+.contact-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  background-color: #fafafa;
+  margin: 0 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 3%;
+}
+
+.section-detail h2{
+  font-size: 40px;
+} 
+
+.section-detail h3{
+  font-size: 40px;
+  color: #ffcb74;
+}
+
+.contact-image img{
+  margin-left: 90px;
+}
+
+/* second banner*/
+.contact-detail{
+  margin-top: 2%;
+  text-align: center;
+}
+
+.contact-detail p{
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(85, 84, 84);
+}
+
+.contact-button{
+  margin-top: 3%;
+}
+
+.contact-button button{
+  padding: 10px 40px;
+  font-size: 16px;
+  margin-right: 2%;
+  border-style: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.contact-button button:hover{
+  background-color: rgba(169, 169, 169, 0.822);
+}
+
+.reachus{
+  text-align: center;
+  margin-top: 4%;
+}
+
+.contact-info{
+  margin: 2% 5%;
+  display: flex;
+}
+
+.info{
+  padding-right: 10px;
+  padding-top: 50px;
+}
+
+.info h5{
+  font-size: 20px;
+}
+.info h5 a{
+  font-style: none;
+}
+
+iframe{
+  width: 600px;
+  height: 400px;
+}
+
+.contact-team h1{
+  text-align:center
+}
+
+.team{
+  margin: 3% 3%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  transition: background-color 5s;
+}
+
+.team-detail{
+  width: 350px;
+  margin: 1%;
+  padding: 0 1%;
+  background-color: #fafafa;
+  padding: 10px 0;
+  border-radius: 8px;
+
+}
+
+.team-detail:hover{
+  background-color: rgba(48, 47, 47, 0.637);
+  color:white
+}
+
+.team-detail h4{
+  font-size: 18px;
+}
+
+

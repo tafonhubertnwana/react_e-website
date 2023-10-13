@@ -1,7 +1,7 @@
 import React from 'react'
 import './footer.css'
 import { Link } from 'react-router-dom'
-import { FaFacebookF, FaTwitter, FaWhatsapp, FaLinkedinIn  } from 'react-icons/fa'
+import { FaFacebookF, FaTwitter, FaWhatsapp, FaLinkedin  } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
                 <li className='facebook'><FaFacebookF /></li>
                 <li className='twitter'><FaTwitter /></li>
                 <li className='whatsapp'><FaWhatsapp /></li>
-                <li className="linkedin"><FaLinkedinIn /></li>
+                <li className="linkedin"><FaLinkedin /></li>
               </ul>
             </div>
             <div className="footer-col">

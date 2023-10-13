@@ -63,6 +63,11 @@
   margin-bottom: 10px;
   align-content: center;
   margin-left: 50px;
+  cursor: pointer;
+}
+
+.product-feature button:hover{
+  background-color: black;
 }
 
 /*Banner*/
