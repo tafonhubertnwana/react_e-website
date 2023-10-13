@@ -13,7 +13,7 @@ export const Navbar = () =>{
           <p><Link to='/' className = 'logo'>HTMobile</Link></p>
           <form>
             <input type="text" placeholder="Search...." />
-            <a href="" className='fasearch'><FaSearch /></a>
+            <Link className='fasearch'><FaSearch /></Link> 
           </form>
           <ul>
             <li className='faregheart'><FaRegHeart /></li>
@@ -28,7 +28,7 @@ export const Navbar = () =>{
               <ul className="dropdown">
                   <li>Iphone</li>
                   <li>Samsung</li>
-                  <li>Google Pixel</li                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                >
+                  <li>G. Pixel</li>
                   <li>Vivo</li>
               </ul>
             </li>

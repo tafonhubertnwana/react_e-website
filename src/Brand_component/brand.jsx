@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Footer from '../Home_component/Footer_component/footer'
 
 const Brand = () => {
   return (
-    <div>brand</div>
+    <div>
+      <Footer />
+    </div>
   )
 }
 

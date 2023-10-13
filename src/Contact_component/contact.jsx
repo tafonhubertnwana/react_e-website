@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Footer from '../Home_component/Footer_component/footer'
 
 const Contact = () => {
   return (
     <div>
-      <h1>Hello worlf</h1>
-
+      <Footer />
     </div>
   )
 }

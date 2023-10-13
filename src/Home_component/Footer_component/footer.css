@@ -2,14 +2,14 @@
   margin-top: 40px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: #fafafa;
   padding-bottom: 60px;
 }
 
 
 .footer-col .logo{
-  padding-top: 30PX;
+  margin-top: 30PX;
   text-decoration: none;
   font-size: 30px;
   color: rgb(255, 136, 0);
@@ -27,9 +27,27 @@
   border-radius: 50px
 }
 
+
+.icons .facebook:hover{
+  color: blue;
+}
+
+.icons .twitter:hover{
+  color: rgb(0, 0, 255)
+}
+
+.icons .linkedin:hover{
+  color: rgb(106, 106, 245);
+}
+
+.icons .whatsapp:hover{
+  color: green; 
+}
+
 .footer-col h2{
   padding-top: 30px;
   color: darkgrey;  
+  
 }
 
 .footer-col ul{
@@ -38,12 +56,17 @@
   padding-top: 10px;
 }
 
+.footer-col ul li .link{
+  text-decoration: none;
+  color: black;
+}
+
 .footer-col ul li{
   padding-top: 5px;
   cursor: pointer;
 }
-
 .footer-container .copyright{
-  padding-top: 20px;
+  padding-top: 10px;
   background-color: #fafafa;
+  text-align: center;
 }

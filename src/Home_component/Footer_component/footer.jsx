@@ -10,19 +10,19 @@ const Footer = () => {
         <div className="footer-container">
           <div className="footer-detail">
             <div className="footer-col">
-              <h1><Link to='/' className = 'logo'>HTMobile</Link></h1>
+              <h1><Link to='/' className='logo'>HTMobile</Link></h1>
               <h2>Follow Us on</h2>
               <ul className='icons'>
-                <li><FaFacebookF /></li>
-                <li><FaTwitter /></li>
-                <li><FaWhatsapp /></li>
-                <li><FaLinkedinIn /></li>
+                <li className='facebook'><FaFacebookF /></li>
+                <li className='twitter'><FaTwitter /></li>
+                <li className='whatsapp'><FaWhatsapp /></li>
+                <li className="linkedin"><FaLinkedinIn /></li>
               </ul>
             </div>
             <div className="footer-col">
               <h2>Services</h2>
               <ul>
-                <li>Sell Phones</li>
+                <li><Link to='/product' className="link">Sell Phones</Link></li>
                 <li>Buy Phones</li>
                 <li>Repair Phone</li>
                 <li>Find New phones</li>
@@ -33,8 +33,8 @@ const Footer = () => {
             <div className="footer-col">
               <h2>Company</h2>
               <ul>
-                <li>About us</li>
-                <li>Articles</li>
+                <li><Link to='/about' className="link">About us</Link></li>
+                <li><Link to='/blog' className="link">Articles</Link></li>
                 <li>Careers</li>
                 <li>Join us as Affiliate Partner</li>
               </ul>
@@ -43,7 +43,7 @@ const Footer = () => {
               <h2>Help & Support</h2>
               <ul>
                 <li>FAQ</li>
-                <li>Contact Us</li>
+                <li><Link to='/contact' className="link">Contact Us</Link></li>
                 <li>Warrant Policy</li>
               </ul>
             </div>
@@ -56,11 +56,8 @@ const Footer = () => {
                 <li>Cookie Policy</li>
               </ul>
             </div>
-            
           </div>
-          <p classnName="copyright
-          ">Copyright &#169; 2023 HTMobile All rights reserved
-</p>
+          <p className="copyright">Copyright &#169; 2023 HTMobile All rights reserve</p>
         </div>
 
       </div>

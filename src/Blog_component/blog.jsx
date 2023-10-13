@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Footer from '../Home_component/Footer_component/footer';
 
  const Blog = () => {
   return (
-    <div>blog</div>
+    <div>
+      Blog
+      <Footer />
+    </div>
   )
 }
 
