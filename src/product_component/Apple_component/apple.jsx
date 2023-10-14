@@ -3,7 +3,8 @@ import Footer from '../../Home_component/Footer_component/footer';
 
 const Apple = () => {
   return (
-    <div>about
+    <div>
+      Apple
       <Footer />
     </div>
   )

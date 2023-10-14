@@ -3,7 +3,8 @@ import Footer from '../../Home_component/Footer_component/footer';
 
 const Vivo = () => {
   return (
-    <div>about
+    <div>
+      Vivo
       <Footer />
     </div>
   )

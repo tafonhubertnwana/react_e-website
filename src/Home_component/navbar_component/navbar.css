@@ -7,7 +7,6 @@
   padding-top: 4px;
   padding-bottom: 4px;
   border-bottom: 1px solid #eeecec ;
-  background-color: #f7f1ea;
 }
 
 .navbar .logo{
@@ -127,11 +126,11 @@ nav ul li ul.dropdown li{
 
 nav ul li ul.dropdown{
   margin-top: 15px;
-
   position: absolute;
   z-index: 999;
   display: none;
   cursor: pointer;
+  background: white;
 }
 
 nav .dropdown{

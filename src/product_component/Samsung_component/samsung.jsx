@@ -3,7 +3,8 @@ import Footer from '../../Home_component/Footer_component/footer';
 
 const Samsung = () => {
   return (
-    <div>about
+    <div>
+      Samsung
       <Footer />
     </div>
   )

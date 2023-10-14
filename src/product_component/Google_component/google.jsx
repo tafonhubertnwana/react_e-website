@@ -3,7 +3,8 @@ import Footer from '../../Home_component/Footer_component/footer';
 
 const Google = () => {
   return (
-    <div>about
+    <div>
+      Google
       <Footer />
     </div>
   )
