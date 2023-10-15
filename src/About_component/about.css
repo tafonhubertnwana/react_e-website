@@ -1,0 +1,47 @@
+.about-container h1{
+  color: #ffcb74;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.about-section{
+  display: flex;
+  justify-content: space-evenly;
+  margin:5% 10%;
+}
+
+.about-image img{
+  width: 500px;
+  height: 350px;
+}
+
+.about-detail p{ 
+  padding: 5px 0;
+  text-wrap: break-word;
+  text-align: justify;
+  margin-left: 5%;
+  font-weight: 700;
+  color: #3b3b3b;
+}
+
+.people-detail{
+margin: 0 38%;
+align-content: center;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.about-people{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-poeple-image {
+  margin-bottom: 20px;
+}
+
+.about-poeple-image img{
+  width: 270px;
+  height: 270px;
+  border-radius: 30px;
+}

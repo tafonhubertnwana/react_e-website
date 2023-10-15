@@ -7,6 +7,19 @@ const Footer = () => {
   return (
     <>
       <div>
+        <div className='newsletter-container'>
+          <div className="newsletter-detail">
+            <h1>SIGN UP FOR OUR NEWSLETTER </h1>
+            <form>
+              <div className="form-action">
+                <input type="text" name="EmailAddress" placeholder='Your Email Address' />
+                <button>Sign Up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div>
         <div className="footer-container">
           <div className="footer-detail">
             <div className="footer-col">

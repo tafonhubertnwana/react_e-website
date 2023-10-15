@@ -1,0 +1,38 @@
+.blog-image{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3% 10%;  
+}
+
+.blog-image img{
+  width: 500px;
+  height: 400px;
+}
+
+.blog-detail{
+  text-align: justify;
+  padding-left: 20px;
+}
+
+.blog-detail h2{
+  padding-bottom: 10px;
+}
+
+.blog-detail button{
+  padding: 10px;
+  font-size: 18px;
+  background-color: #FFCB74;
+  border-style: none;
+}
+
+
+.blog-detail button a{
+  text-decoration: none;
+  font-style: none;
+  color: black;
+}
+
+.blog-detail button:hover{
+  background-color: black;
+  color: white;
+}
