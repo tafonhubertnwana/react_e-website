@@ -20,12 +20,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Navbar />} >
             <Route index element={<Home />} />
-            <Route path='product' element= {<Product />} >
-              <Route index element={<Apple />} />
-              <Route path='samsung' element={<Samsung />} />
-              <Route path='google' element={<Google />} />
-              <Route path='vivo' element={<Vivo />} />
-            </Route>
+            <Route path='product' element= {<Product />} />
+            <Route path='apple' element={<Apple />} />
+            <Route path='samsung' element={<Samsung />} />
+            <Route path='google' element={<Google />} />
+            <Route path='vivo' element={<Vivo />} />
             <Route path='about' element={<About />} />
             <Route path="blog" element={<Blog />} />
             <Route path='contact' element={<Contact />} />  

@@ -24,17 +24,17 @@ export const Navbar = () =>{
         <nav>
           <ul>
             <li><Link to= '/'>Home</Link></li>
-            <li><Link to='/product'>Products</Link>
+            <li><Link to='product'>Products</Link>
               <ul className="dropdown">
-                <li><Link to='/product/apple'>Iphone</Link></li>
-                <li><Link to='/product/samsung'> Samsung</Link></li>
-                <li><Link to="/product/google">Google Pixel</Link></li>
-                <li><Link to="/product/vivo">Vivo</Link></li>
+                <li><Link to='apple'>Iphone</Link></li>
+                <li><Link to='samsung'> Samsung</Link></li>
+                <li><Link to="google">Google Pixel</Link></li>
+                <li><Link to="vivo">Vivo</Link></li>
             </ul>
             </li>
-            <li><Link to='/blog'>Blog</Link></li>
-            <li><Link to='/about'>About</Link></li>
-            <li><Link to='/contact'>Contact</Link></li>
+            <li><Link to='blog'>Blog</Link></li>
+            <li><Link to='about'>About</Link></li>
+            <li><Link to='contact'>Contact</Link></li>
           </ul>
         </nav> 
       </div>
