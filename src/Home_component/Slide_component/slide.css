@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.img-container {
+.apple-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +19,7 @@
   padding-bottom: 20px;
 }
 
-.img-container-3 {
+.vivo-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,19 +31,19 @@
   padding-bottom: 20px;
 }
 
-.img-container-3 .detail h1{
+.vivo-container .detail h1{
   padding-bottom: 10px;
   color: #ffcb74;
   font-size: 40px;
 }
 
-.img-container-3 .detail p{
+.vivo-container .detail p{
   color: black;
   font-weight: bold;
   font-size: 23px;
 }
 
-.img-container-3 .detail button{
+.vivo-container .detail button{
   margin-top: 30px;
   padding: 8px;
   font-size: 18px;
@@ -52,7 +52,7 @@
   border-radius: 10px;
 }
 
-.img-container-2{
+.pixel-container{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,18 +64,18 @@
   padding-bottom: 20px;
 }
 
-.img-container-2 .detail h1{
+.pixel-container .detail h1{
   color:rgb(0, 0, 0);
   font-size: 40px;
 }
 
-.img-container-2 .detail p{
+.pixel-container .detail p{
   font-size: 25px;
   font-weight: bold;
   color: black;
 }
 
-.img-container-2 .detail button{
+.pixel-container .detail button{
   margin-top: 30px;
   padding: 8px;
   font-size: 18px;
@@ -85,7 +85,7 @@
   color: white
 }
 
-.img-container-1{
+.samsung-container{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,19 +97,19 @@
   background-color: rgba(21, 22, 21, 0.952);
 }
 
-.img-container-1 .detail h1{
+.samsung-container .detail h1{
   color: #f7f1ea;
   padding-right: 20px;
   padding-bottom: 8px;
   font-size: 50px;
 } 
 
-.img-container-1 .detail p{
+.samsung-container .detail p{
   color: #f0f0f0;
   font-size: 20px;
 }
 
-.img-container-1 button{
+.samsung-container button{
   margin-top: 30px;
   padding: 8px 30px;
   font-size: 18px;
@@ -118,20 +118,18 @@
   border-radius: 10px;
 }
 
-
-
-.img-container .detail h1{
+.apple-container .detail h1{
   color: rgba(97, 83, 4, 0.712);
   font-size: 50px;
 }
 
-.img-container .detail p{
+.apple-container .detail p{
   font-size: 30px;
   margin-bottom: 20px;
   color: white;
 }
 
-.img-container button{
+.apple-container button{
   margin-top: 30px;
   padding: 8px;
   font-size: 18px;

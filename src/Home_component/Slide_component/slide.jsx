@@ -39,7 +39,7 @@ const Slide = () => {
     <>
       <div className='carousel-element'>
         <Carousel {...settings}>
-          <div className="img-container">
+          <div className="apple-container">
             <div className="detail">
               <h1> titanium </h1>
               <p> <FaApple /> Iphone 15Pro</p>
@@ -49,7 +49,7 @@ const Slide = () => {
               <img src= {image1} alt='photo1' />
             </div> 
           </div>
-          <div className="img-container-1">
+          <div className="samsung-container">
             <div className="detail">
               <h1>Galaxy S23 Series</h1>
               <p>Get 50% off on our Own Epic</p>
@@ -59,7 +59,7 @@ const Slide = () => {
               <img src= {image2} alt='photo1' />
             </div> 
           </div>
-          <div className="img-container-2">
+          <div className="pixel-container">
             <div className="detail">
               <h1>Google Pixel Pro 8</h1>
               <p>Larger than Life</p>
@@ -69,7 +69,7 @@ const Slide = () => {
               <img src= {image3} alt='photo1' />
             </div> 
           </div>
-          <div className="img-container-3">
+          <div className="vivo-container">
             <div className="detail">
               <h1>Vivo V27 Pro </h1>
               <p>Delight Every Moment <br></br>Get benefit up to 5% on sales</p>
