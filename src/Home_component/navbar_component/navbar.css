@@ -121,8 +121,10 @@ nav ul li a {
 
 nav ul li ul.dropdown li{
   display:block;
-  width: 50%;
+  width: 100%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.26);
 }
+
 
 nav ul li ul.dropdown{
   margin-top: 15px;
@@ -148,7 +150,7 @@ nav .dropdown li{
 
 
 nav ul a:hover{
-  color: blue;
+  color: rgba(106, 106, 109, 0.596);
 }
 
 nav ul li:hover ul.dropdown{
