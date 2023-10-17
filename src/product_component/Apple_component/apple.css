@@ -13,14 +13,14 @@
   justify-content: center;
   border-radius: 5px;
   flex-wrap: wrap;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(247, 246, 246, 0.705);
   margin: 0 10%;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .apple-container-1 .detail h1{
-  color: rgba(97, 83, 4, 0.712);
+  color: rgba(41, 38, 24, 0.712);
   font-size: 50px;
 }
 

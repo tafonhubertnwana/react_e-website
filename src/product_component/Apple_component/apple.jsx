@@ -1,18 +1,19 @@
 import React from 'react';
+import './apple.css'
 import Footer from '../../Home_component/Footer_component/footer';
 import { Carousel } from 'react-responsive-carousel';
 import { FaApple } from "react-icons/fa";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import imageApple1 from './apple-image/Apple-iPhone-Pro.jpg'
-import imageApple2 from './apple-image/iphone-apple.webp'
+import imageApple2 from './apple-image/Apple-iPhone-15.jpg'
 
 const settings = {
   showArrows: false,
-  interval: 4000,
+  interval: 3000,
   dynamicHeight: true,
   stopOnHover: true,
-  infinieLoop: false,
+  infinieLoop: true,
   showStatus: false,
   transitionTime: 50,
   showThumbs: false,
