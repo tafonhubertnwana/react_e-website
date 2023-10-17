@@ -15,7 +15,6 @@
   flex-wrap: wrap;
   background-color: rgba(247, 246, 246, 0.705);
   margin: 0 10%;
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -27,6 +26,6 @@
 .apple-container-1 .detail p{
   font-size: 30px;
   margin-bottom: 20px;
-  color: white;
+  color:rgb(0, 0, 0);
 }
 

@@ -20,14 +20,14 @@ import service4 from '../Slide_component/image_slider/find_phone.webp'
 import service5 from '../Slide_component/image_slider/recycle.webp'
 
 const settings = {
-  showArrows: false,
-  interval: 4000,
+  showArrows: true,
+  interval: 5000,
   dynamicHeight: true,
   stopOnHover: true,
-  infinieLoop: false,
+  infiniteLoop: true,
   showStatus: false,
   transitionTime: 50,
-  showThumbs: false,
+  showThumbs: true,
   swipeable: true,
   emulateTouch: true,
   autoPlay: true,

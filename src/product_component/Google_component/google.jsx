@@ -1,19 +1,21 @@
 import React from 'react';
 import Footer from '../../Home_component/Footer_component/footer';
+import './google.css'
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import image3 from './Google-Pixel-Fold.webp';
+import imagePixel from './google-banner-image/GP-7a.jpg';
+import imagePixel1 from './google-banner-image/Google-Pixel-Fold.webp';
 
 const settings = {
-  showArrows: false,
-  interval: 3000,
+  showArrows: true,
+  interval: 5000,
   dynamicHeight: true,
   stopOnHover: true,
-  infinieLoop: true,
+  infiniteLoop: true,
   showStatus: false,
   transitionTime: 50,
-  showThumbs: false,
+  showThumbs: true,
   swipeable: true,
   emulateTouch: true,
   autoPlay: true,
@@ -25,24 +27,23 @@ const Google = () => {
     <>
       <div className='carousel-element'>
         <Carousel {...settings}>
-          <div className="pixel-container">
+          <div className="pixel">
             <div className="detail">
-              <h1>Google Pixel Pro 8</h1>
+              <h1>Google Pixel 8 & 8 Pro</h1>
               <p>Larger than Life</p>
               <button>Order Now</button>
             </div>
             <div className="image">
-              <img src= {image3} alt='photo1' />
+              <img src= {imagePixel} alt='photo1' />
             </div> 
           </div>
-          <div className="pixel-container">
+          <div className="pixel-1">
             <div className="detail">
-              <h1>Google Pixel Pro 8</h1>
+              <h1>Google Pixel Fold</h1>
               <p>Larger than Life</p>
-              <button>Order Now</button>
             </div>
             <div className="image">
-              <img src= {image3} alt='photo1' />
+              <img src= {imagePixel1} alt='photo1' />
             </div> 
           </div>
         </Carousel>
