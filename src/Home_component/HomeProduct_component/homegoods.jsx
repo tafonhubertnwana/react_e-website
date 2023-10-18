@@ -10,6 +10,8 @@ import banner from "../HomeProduct_component/images/1stkvdesk.webp";
 
 
 
+
+
 const product = productData.map((item) => 
   <Product 
     name={item.name} 
@@ -62,15 +64,6 @@ const Homeproduct = () => {
         {productPromotion}
       </Carousel>
 
-      <div>  
-        <div className="testimonia-containter">
-          <div className="testimonia-detail">
-            <div className="testimonia-feature">
-              <p>Testimonial section</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   )
 }
