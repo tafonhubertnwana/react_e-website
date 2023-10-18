@@ -43,7 +43,7 @@ const Slide = () => {
             <div className="detail">
               <h1> titanium </h1>
               <p> <FaApple /> Iphone 15Pro</p>
-              <button>Shop now</button>
+              <button><a href="apple">Shop now</a></button>
             </div>
             <div className="image">
               <img src= {image1} alt='photo1' />
@@ -53,7 +53,7 @@ const Slide = () => {
             <div className="detail">
               <h1>Galaxy S23 Series</h1>
               <p>Get 50% off on our Own Epic</p>
-              <button>Buy Now</button>
+              <button><a href="samsung">Buy Now</a></button>
             </div>
             <div className="image">
               <img src= {image2} alt='photo1' />
@@ -63,7 +63,7 @@ const Slide = () => {
             <div className="detail">
               <h1>Google Pixel Pro 8</h1>
               <p>Larger than Life</p>
-              <button>Order Now</button>
+              <button><a href="google">Order Now</a></button>
             </div>
             <div className="image">
               <img src= {image3} alt='photo1' />
@@ -73,7 +73,7 @@ const Slide = () => {
             <div className="detail">
               <h1>Vivo V27 Pro </h1>
               <p>Delight Every Moment <br></br>Get benefit up to 5% on sales</p>
-              <button>check it Out</button>
+              <button><a href="vivo">check it Out</a></button>
             </div>
             <div className="image">
               <img src= {image4} alt='photo1' />

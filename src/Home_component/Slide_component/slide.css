@@ -142,6 +142,19 @@
   border-style: none;
   border-radius: 10px;
   color:#f0f0f0;
+  transition: transform 0.15s;
+}
+
+.apple-container button:hover{
+  transform: translateY(-5px);
+  background-color: rgba(128, 128, 128, 0.815);
+  color: black;
+}
+
+ button a{
+  text-decoration: none;
+  color: rgb(250, 248, 248);
+  font-size: 18px;
 }
 
 .image img{
