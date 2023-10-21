@@ -118,4 +118,40 @@ iframe{
   font-size: 18px;
 }
 
+@media only screen and (max-width: 768px) {
+  .section-detail h2{
+    font-size: 30px;
+  } 
+  
+  .contact-image img{
+    width: 250px;
+    margin-left: 0px;
+  }
 
+  .reachus{
+    text-align: center;
+    margin-top: 4%;
+  }
+  
+  .contact-info{
+    margin: 2% 5%;
+    display: flex;
+  }
+  
+  .info{
+    padding-right: 10px;
+    padding-top: 50px;
+  }
+  
+  .info h5{
+    font-size: 20px;
+  }
+  .info h5 a{
+    font-style: none;
+  }
+  
+  iframe{
+    width: 600px;
+    height: 400px;
+  }
+}

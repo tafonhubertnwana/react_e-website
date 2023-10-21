@@ -195,6 +195,127 @@
   text-align: center;
 }
 
+/*creating a media query for tablet*/
+@media only screen and (max-width: 768px) {
+  .carousel-element{
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    justify-content: center;
+    background-color: rgb(214, 214, 7);
+  }
+  
 
+  .apple-container .detail h1{
+    font-size: 25px;
+  }
+  
+  .apple-container .detail p{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .apple-container button{
+    margin-top: 3px;
+    margin-bottom: 1px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+ 
+  }
 
+  .image img{
+    width: 200px;
+    height: 200px;
+  }
+  
+  .samsung-container .detail h1{
+    padding-right: 20px;
+    padding-bottom: 8px;
+    font-size: 25px;
+  } 
+  
+  .samsung-container .detail p{
+    font-size: 18px;
+  }
+  
+  .samsung-container button{
+    margin-top: 10px;
+    padding: 4px 15px;
+    font-size: 18px;
+    border-radius: 8px;
+  }
+  
+  .pixel-container .detail h1{
+    font-size: 20px;
+  }
+  
+  .pixel-container .detail p{
+    font-size: 18px;
+  }
+  
+  .pixel-container .detail button{
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  
+  .vivo-container .detail h1{
+    padding-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .vivo-container .detail p{
+    font-size: 16px;
+  }
+  
+  .vivo-container .detail button{
+    margin-top: 3px;
+    padding:4px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  /*service*/
+  .service{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-weight: 700;
+  }
+  
+  .service-container{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .service-detail{
+   border-radius: 10px;         
+   margin: 2px;
+   align-items: center;
+   transition: transform 0.6s;
+  }
+  
+  .service-detail:hover{
+    transform: translateY(-5px); 
+  }
+  
+  .service-detail img{
+    width: 120px;
+    height: 100px;
+  }
+  
+  .service-detail p{
+    text-align: center;
+  }
+}
+
+/*creating a media query for phones*/
+@media only screen and (max-width: 425px) {
+  .image img{
+    width: 100px;
+    height: 100px;
+  }
+}
 

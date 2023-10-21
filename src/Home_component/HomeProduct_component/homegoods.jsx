@@ -49,7 +49,7 @@ const Homeproduct = () => {
         {product}
       </Carousel>
       <div className="banner">
-        <img src={banner} alt="Banner" />
+        
       </div>
       <div className="feature-categories">  
         <p>Samsung Series</p>

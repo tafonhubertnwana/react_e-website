@@ -42,7 +42,7 @@ const Slide = () => {
           <div className="apple-container">
             <div className="detail">
               <h1> titanium </h1>
-              <p> <FaApple /> Iphone 15Pro</p>
+              <p> <FaApple />Iphone 15Pro</p>
               <button><a href="apple">Shop now</a></button>
             </div>
             <div className="image">
