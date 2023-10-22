@@ -1,3 +1,4 @@
+
 export const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -18,7 +19,7 @@ export const responsive = {
   }
 };
 
-export const productData = [
+export const AppleproductData = [
   {
     id: 1,
     imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1696901510/Apple_11_pro_clrvcl.png",
@@ -57,7 +58,7 @@ export const productData = [
   }
 ]
 
-export const productDataTwo = [
+export const SamsungproductData = [
   {
     id:1,
     imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1696938627/vivo_v9_pro_ywcgci.png",
@@ -97,7 +98,7 @@ export const productDataTwo = [
 ]
 
 
-export const productDataThree = [
+export const OfferproductData = [
   {
     id:1,
     imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1696933813/galazy_Note_8_kmgata.png",
@@ -140,4 +141,79 @@ export const productDataThree = [
     price: "150000frs",
     rate: "50% OFF"
   }
+]
+
+/*Testimonial*/
+export const Testimonial = [
+  {
+    id:1,
+    image: './Home_component/personel-3.jpg',
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem repellendus eum perspiciatis perferendis, odio, porro ut eos ipsam quia possimus nam hic soluta suscipit, similique minus sequi voluptate rerum.",
+    name: 'Lebga Lesly',
+    position: 'customer'
+  },
+  {
+    id:2,
+    image: './Home_component/personel-3.jpg',
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem repellendus eum perspiciatis perferendis, odio, porro ut eos ipsam quia possimus nam hic soluta suscipit, similique minus sequi voluptate rerum.",
+    name: 'Lebga Lesly',
+    position: 'customer'
+  },
+  {
+    id:3,
+    image: './Home_component/personel-3.jpg',
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem repellendus eum perspiciatis perferendis, odio, porro ut eos ipsam quia possimus nam hic soluta suscipit, similique minus sequi voluptate rerum.",
+    name: 'Lebga Lesly',
+    position: 'customer'
+  },
+  {
+    id:4,
+    image: './Home_component/personel-3.jpg',
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem repellendus eum perspiciatis perferendis, odio, porro ut eos ipsam quia possimus nam hic soluta suscipit, similique minus sequi voluptate rerum.",
+    name: 'Lebga Lesly',
+    position: 'customer'
+  },
+  {
+    id:5,
+    image: './Home_component/personel-3.jpg',
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem repellendus eum perspiciatis perferendis, odio, porro ut eos ipsam quia possimus nam hic soluta suscipit, similique minus sequi voluptate rerum.",
+    name: 'Lebga Lesly',
+    position: 'customer'
+  },
+  {
+    id:6,
+    image: './Home_component/personel-3.jpg',
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem repellendus eum perspiciatis perferendis, odio, porro ut eos ipsam quia possimus nam hic soluta suscipit, similique minus sequi voluptate rerum.",
+    name: 'Lebga Lesly',
+    position: 'customer'
+  }
+]
+
+/*About*/
+export const AboutPeople = [
+  {
+    id:1,
+    image:'./About_component/about_image/personel-1.jpg',
+    name: 'Tafon Hubert',
+    position: "Founder"
+  },
+  {
+    id:2,
+    image:'./About_component/about_image/personel-1.jpg',
+    name: 'Hortensia Tabeh',
+    position: "Co-Founder"
+  },
+  {
+    id:3,
+    image: './About_component/about_image/personel-2.jpg',
+    name: 'Cynthia Tabeh',
+    position: "Co-Founder, Chief Marketing Officer"
+  },
+  {
+    id:4,
+    image:'./About_component/about_image/personel-3.jpg',
+    name: 'Lebga Lesly',
+    position: "Co-Founder, Chief Business Officer"
+  }
+
 ]

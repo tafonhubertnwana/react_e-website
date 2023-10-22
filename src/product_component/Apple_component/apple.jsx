@@ -8,12 +8,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import imageApple1 from './apple-image/Apple-iPhone-Pro.jpg'
 import imageApple2 from './apple-image/Apple-iPhone-15.jpg'
-import a1 from './iphone_image/Apple_11_pro.jpg'
-import a2 from './iphone_image/Apple_13_mini.jpg'
-import a3 from './iphone_image/Apple_15_Pro_Max.jpg'
-import a4 from './iphone_image/Apple_15_plus.jpg'
-import a5 from './iphone_image/Apple_15_pro.jpg'
-import a6 from './iphone_image/Apple_XR.jpg'
 
 
 const settings = {
@@ -62,7 +56,7 @@ const Apple = () => {
       </div>
       <div className="product-path ">
         <div className="product-section">
-          <img src={a1} alt='Apple 11'/>
+          <img src="" alt='Apple 11'/>
           <div className="product-detail">
             <h2>iphone 11 Pro </h2>
             <p className="price">100000frs</p>
@@ -70,7 +64,7 @@ const Apple = () => {
           </div>
         </div>
         <div className="product-section">
-          <img src={a1} alt='Apple 11'/>
+          <img src='' alt='Apple 11'/>
           <div className="product-detail">
             <h2>iphone 11 Pro </h2>
             <p className="price">100000frs</p>
@@ -78,7 +72,7 @@ const Apple = () => {
           </div>
         </div>
         <div className="product-section">
-          <img src={a1} alt='Apple 11'/>
+          <img src="" alt='Apple 11'/>
           <div className="product-detail">
             <h2>iphone 11 Pro </h2>
             <p className="price">100000frs</p>
@@ -86,7 +80,7 @@ const Apple = () => {
           </div>
         </div>
         <div className="product-section">
-          <img src={a2} alt='Apple 11'/>
+          <img src='' alt='Apple 11'/>
           <div className="product-detail">
             <h2>iphone 11 Pro </h2>
             <p className="price">100000frs</p>
@@ -94,7 +88,7 @@ const Apple = () => {
           </div>
         </div>
         <div className="product-section">
-          <img src={a3} alt='Apple 11'/>
+          <img src="" alt='Apple 11'/>
           <div className="product-detail">
             <h2>iphone 11 Pro </h2>
             <p className="price">100000frs</p>
@@ -102,7 +96,7 @@ const Apple = () => {
           </div>
         </div>
         <div className="product-section">
-          <img src={a4} alt='Apple 11'/>
+          <img src="" alt='Apple 11'/>
           <div className="product-detail">
             <h2>iphone 11 Pro </h2>
             <p className="price">100000frs</p>
@@ -110,7 +104,7 @@ const Apple = () => {
           </div>
         </div>
         <div className="product-section">
-          <img src={a5} alt='Apple 11'/>
+          <img src="" alt='Apple 11'/>
           <div className="product-detail">
             <h2>iphone 11 Pro </h2>
             <p className="price">100000frs</p>
@@ -118,7 +112,7 @@ const Apple = () => {
           </div>
         </div>
         <div className="product-section">
-          <img src={a6} alt='Apple 11'/>
+          <img src="" alt='Apple 11'/>
           <div className="product-detail">
             <h2>iphone 11 Pro </h2>
             <p className="price">100000frs</p>

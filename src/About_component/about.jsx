@@ -1,11 +1,30 @@
 import React from 'react';
 import "./about.css";
 import Footer from '../Home_component/Footer_component/footer';
-
 import aboutImage from './about_image/About-Us.jpg';
-import person1 from './about_image/personel-1.jpg';
-import person2 from './about_image/personel-2.jpg';
-import person3 from './about_image/personel-3.jpg';
+import { AboutPeople } from './../data';
+
+const AboutUs = (props) =>{
+  return(
+    <div className="about-poeple-image">
+      <img src={props.image} alt="" />
+      <div className="about-poeple-detail">
+        <h3>{props.name}</h3>
+        <p>{props.position}</p>
+      </div>
+    </div>
+  )
+}
+
+const aboutWorkers = AboutPeople.map((item) =>
+  <AboutUs
+    image={item.image}
+    name={item.name}
+    position={item.position}
+  />
+)
+
+
 
 const About = () => {
   return (
@@ -30,31 +49,8 @@ const About = () => {
           <p>Get to know the founders and team leaders making it all happen.</p>
         </div>
         <div className="about-people">
-          <div className="about-poeple-image">
-            <img src={person1} alt="" />
-            <div className="about-poeple-detail">
-              <h3>Hortensia Tabeh</h3>
-              <p>Co-Founder</p>
-            </div>
-          </div>
-          <div className="about-poeple-image">
-            <img src={person2} alt="" />
-            <div className="about-poeple-detail">
-              <h3>Cynthia Tabeh</h3>
-              <p>Co-Founder, Chief Marketing Officer</p>
-            </div>
-          </div>
-          <div className="about-poeple-image">
-            <img src={person3} alt="" />
-            <div className="about-poeple-detail">
-              <h3>Lebga Lesly</h3>
-              <p>Co-Founder, Chief Business Officer</p>
-            </div>
-          </div>
+          {aboutWorkers}
         </div>
-        
-
-
       </div>
       <Footer />
     </div>

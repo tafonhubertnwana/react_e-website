@@ -7,14 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import imageSamsung from './Samsung-banner-image/Samsung-S21.png';
 import imageSamsung1 from './Samsung-banner-image/Samsung-Galaxy-A54.webp';
 
-import aa from './samsung_image/Galaxy_Z_fold5.jpg'
-import ab from './/samsung_image/Galaxy_f04.jpg'
-import ac from './/samsung_image/Galaxy_f54_5g.jpg'
-import ad from './/samsung_image/Galaxy_m14_5g.jpg'
-import ae from './/samsung_image/Galaxy_m34_5g.jpg'
-import af from './/samsung_image/Galaxy_s23_5G.jpg'
-import ag from './/samsung_image/galazy Note 8.jpg'
-import ah from './/samsung_image/Galaxy_s23_5G.jpg'
+
 
 
 const settings = {
@@ -61,7 +54,7 @@ const Samsung = () => {
       <div>
         <div className="product-path ">
           <div className="product-section">
-            <img src={ae} alt='Apple 11'/>
+            <img src="" alt='Apple 11'/>
             <div className="product-detail">
               <h2>iphone 11 Pro </h2>
               <p className="price">100000frs</p>
@@ -69,7 +62,7 @@ const Samsung = () => {
             </div>
           </div>
           <div className="product-section">
-            <img src={ah} alt='Apple 11'/>
+            <img src="" alt='Apple 11'/>
             <div className="product-detail">
               <h2>iphone 11 Pro </h2>
               <p className="price">100000frs</p>
@@ -77,7 +70,7 @@ const Samsung = () => {
             </div>
           </div>
           <div className="product-section">
-            <img src={ag} alt='Apple 11'/>
+            <img src="" alt='Apple 11'/>
             <div className="product-detail">
               <h2>iphone 11 Pro </h2>
               <p className="price">100000frs</p>
@@ -85,7 +78,7 @@ const Samsung = () => {
             </div>
           </div>
           <div className="product-section">
-            <img src={af} alt='Apple 11'/>
+            <img src="" alt='Apple 11'/>
             <div className="product-detail">
               <h2>iphone 11 Pro </h2>
               <p className="price">100000frs</p>
@@ -93,7 +86,7 @@ const Samsung = () => {
             </div>
           </div>
           <div className="product-section">
-            <img src={ad} alt='Apple 11'/>
+            <img src="" alt='Apple 11'/>
             <div className="product-detail">
               <h2>iphone 11 Pro </h2>
               <p className="price">100000frs</p>
@@ -101,7 +94,7 @@ const Samsung = () => {
             </div>
           </div>
           <div className="product-section">
-            <img src={ac} alt='Apple 11'/>
+            <img src="" alt='Apple 11'/>
             <div className="product-detail">
               <h2>iphone 11 Pro </h2>
               <p className="price">100000frs</p>
@@ -109,7 +102,7 @@ const Samsung = () => {
             </div>
           </div>
           <div className="product-section">
-            <img src={ab} alt='Apple 11'/>
+            <img src="" alt='Apple 11'/>
             <div className="product-detail">
               <h2>iphone 11 Pro </h2>
               <p className="price">100000frs</p>
@@ -117,7 +110,7 @@ const Samsung = () => {
             </div>
           </div>
           <div className="product-section">
-            <img src={aa} alt='Apple 11'/>
+            <img src="" alt='Apple 11'/>
             <div className="product-detail">
               <h2>iphone 11 Pro </h2>
               <p className="price">100000frs</p>

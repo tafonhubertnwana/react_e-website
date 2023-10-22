@@ -2,18 +2,57 @@ import React from 'react'
 import './homegoods.css'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import Product from "./homeproduct.jsx";
-import ProductTwo from "./homeproduct.jsx";
-import ProductThree from "./homeproduct.jsx";
-import { productData, responsive, productDataTwo, productDataThree} from './data';
+import { AppleproductData, responsive, SamsungproductData, OfferproductData} from '../../data';
+import { FaRegHeart } from "react-icons/fa";
+
+
+const AppleProduct = (props) => {
+  return (
+    <div className="product-feature">
+      <p className= 'like_heart'><FaRegHeart /></p>
+      <img src={props.url} alt='Apple 11' />                                     
+      <div className="product-details">
+        <h2>{props.name} </h2>
+        <p className="price">{props.price}</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  )
+}
+
+const SamsungProduct = (props) => {
+  return (
+    <div className="product-feature">
+      <p className= 'like_heart'><FaRegHeart /></p>
+      <img src={props.url} alt='Apple 11'/>
+      <div className="product-details">
+        <h2>{props.name} </h2>
+        <p className="price">{props.price}</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  )
+}
+
+const OfferProduct = (props) => {
+  return (
+    <div className="product-feature">
+      <p className= 'like_heart'><FaRegHeart /></p>
+      <img src={props.url} alt='Apple 11'/>
+      <div className="product-details">
+        <h2>{props.name} </h2>
+        <p className="price">{props.price}</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  )
+}
 
 
 
 
-
-
-const product = productData.map((item) => 
-  <Product 
+const product = AppleproductData.map((item) => 
+  <AppleProduct 
     name={item.name} 
     url={item.imageurl} 
     price={item.price}
@@ -22,8 +61,8 @@ const product = productData.map((item) =>
 )
 
 
-const productSamsung = productDataTwo.map((item) => 
-  <ProductTwo 
+const productSamsung = SamsungproductData.map((item) => 
+  <SamsungProduct 
     name={item.name} 
     url={item.imageurl} 
     price={item.price}
@@ -31,8 +70,8 @@ const productSamsung = productDataTwo.map((item) =>
   />
 )
 
-const productPromotion = productDataThree.map((item) => 
-  <ProductThree 
+const productPromotion = OfferproductData.map((item) => 
+  <OfferProduct
     name={item.name} 
     url={item.imageurl} 
     price={item.price}
