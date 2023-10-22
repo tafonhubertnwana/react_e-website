@@ -6,7 +6,7 @@ import Product from "./homeproduct.jsx";
 import ProductTwo from "./homeproduct.jsx";
 import ProductThree from "./homeproduct.jsx";
 import { productData, responsive, productDataTwo, productDataThree} from './data';
-import banner from "../HomeProduct_component/images/1stkvdesk.webp";
+
 
 
 
@@ -17,14 +17,17 @@ const product = productData.map((item) =>
     name={item.name} 
     url={item.imageurl} 
     price={item.price}
+    like={item.heart}
   />
 )
+
 
 const productSamsung = productDataTwo.map((item) => 
   <ProductTwo 
     name={item.name} 
     url={item.imageurl} 
     price={item.price}
+    like={item.heart}
   />
 )
 
@@ -34,6 +37,7 @@ const productPromotion = productDataThree.map((item) =>
     url={item.imageurl} 
     price={item.price}
     rate={item.rate}
+    like={item.heart}
   />
 )
 
