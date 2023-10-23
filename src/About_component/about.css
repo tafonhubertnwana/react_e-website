@@ -25,10 +25,20 @@
 }
 
 .people-detail{
-margin: 0 38%;
+margin: 0 35%;
 align-content: center;
 text-align: center;
-margin-bottom: 20px;
+margin-bottom: 30px;
+}
+
+.people-detail h2{
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.people-detail p{
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .about-people{
@@ -42,6 +52,16 @@ margin-bottom: 20px;
 
 .about-poeple-image img{
   width: 270px;
-  height: 270px;
+  height: 290px;
   border-radius: 30px;
+}
+
+.about-poeple-detail h3{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.about-poeple-detail p{
+  text-align: center;
+  margin-bottom: 10%;
 }

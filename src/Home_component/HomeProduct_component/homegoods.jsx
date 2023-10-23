@@ -48,9 +48,6 @@ const OfferProduct = (props) => {
   )
 }
 
-
-
-
 const product = AppleproductData.map((item) => 
   <AppleProduct 
     name={item.name} 
@@ -59,7 +56,6 @@ const product = AppleproductData.map((item) =>
     like={item.heart}
   />
 )
-
 
 const productSamsung = SamsungproductData.map((item) => 
   <SamsungProduct 
@@ -79,7 +75,6 @@ const productPromotion = OfferproductData.map((item) =>
     like={item.heart}
   />
 )
-
 
 const Homeproduct = () => {
   return (
@@ -106,7 +101,6 @@ const Homeproduct = () => {
       <Carousel responsive={responsive}>
         {productPromotion}
       </Carousel>
-
     </>
   )
 }

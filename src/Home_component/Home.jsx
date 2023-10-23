@@ -7,7 +7,6 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Testimonial, responsive} from './../data';
 
-
 const Testimonia = (props) => {
   return(
   <div className="testimonia-section">
@@ -21,7 +20,7 @@ const Testimonia = (props) => {
     </div>
   </div>
   )
-}
+};
 
 const Testimony = Testimonial.map((item) =>
   <Testimonia 

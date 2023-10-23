@@ -1,4 +1,3 @@
-
 export const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -147,42 +146,42 @@ export const OfferproductData = [
 export const Testimonial = [
   {
     id:1,
-    image: './Home_component/personel-3.jpg',
+    image: require('./Home_component/personel-3.jpg'),
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem repellendus eum perspiciatis perferendis, odio, porro ut eos ipsam quia possimus nam hic soluta suscipit, similique minus sequi voluptate rerum.",
     name: 'Lebga Lesly',
     position: 'customer'
   },
   {
     id:2,
-    image: './Home_component/personel-3.jpg',
+    image: require('./Home_component/personel-3.jpg'),
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem repellendus eum perspiciatis perferendis, odio, porro ut eos ipsam quia possimus nam hic soluta suscipit, similique minus sequi voluptate rerum.",
     name: 'Lebga Lesly',
     position: 'customer'
   },
   {
     id:3,
-    image: './Home_component/personel-3.jpg',
+    image: require('./Home_component/personel-3.jpg'),
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem repellendus eum perspiciatis perferendis, odio, porro ut eos ipsam quia possimus nam hic soluta suscipit, similique minus sequi voluptate rerum.",
     name: 'Lebga Lesly',
     position: 'customer'
   },
   {
     id:4,
-    image: './Home_component/personel-3.jpg',
+    image: require('./Home_component/personel-3.jpg'),
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem repellendus eum perspiciatis perferendis, odio, porro ut eos ipsam quia possimus nam hic soluta suscipit, similique minus sequi voluptate rerum.",
     name: 'Lebga Lesly',
     position: 'customer'
   },
   {
     id:5,
-    image: './Home_component/personel-3.jpg',
+    image: require('./Home_component/personel-3.jpg'),
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem repellendus eum perspiciatis perferendis, odio, porro ut eos ipsam quia possimus nam hic soluta suscipit, similique minus sequi voluptate rerum.",
     name: 'Lebga Lesly',
     position: 'customer'
   },
   {
     id:6,
-    image: './Home_component/personel-3.jpg',
+    image: require('./Home_component/personel-3.jpg'),
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem repellendus eum perspiciatis perferendis, odio, porro ut eos ipsam quia possimus nam hic soluta suscipit, similique minus sequi voluptate rerum.",
     name: 'Lebga Lesly',
     position: 'customer'
@@ -193,25 +192,25 @@ export const Testimonial = [
 export const AboutPeople = [
   {
     id:1,
-    image:'./About_component/about_image/personel-1.jpg',
+    image:require('./About_component/about_image/personel-1.jpg'),
     name: 'Tafon Hubert',
     position: "Founder"
   },
   {
     id:2,
-    image:'./About_component/about_image/personel-1.jpg',
+    image:require('./About_component/about_image/personel-1.jpg'),
     name: 'Hortensia Tabeh',
     position: "Co-Founder"
   },
   {
     id:3,
-    image: './About_component/about_image/personel-2.jpg',
+    image: require('./About_component/about_image/personel-2.jpg'),
     name: 'Cynthia Tabeh',
     position: "Co-Founder, Chief Marketing Officer"
   },
   {
     id:4,
-    image:'./About_component/about_image/personel-3.jpg',
+    image:require('./About_component/about_image/personel-3.jpg'),
     name: 'Lebga Lesly',
     position: "Co-Founder, Chief Business Officer"
   }

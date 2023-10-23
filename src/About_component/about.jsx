@@ -24,8 +24,6 @@ const aboutWorkers = AboutPeople.map((item) =>
   />
 )
 
-
-
 const About = () => {
   return (
     <div>
