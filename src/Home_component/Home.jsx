@@ -12,11 +12,14 @@ const Testimonia = (props) => {
   <div className="testimonia-section">
     <div className="testimonia-image">
       <img src={props.image} alt="" />
-    </div>
-    <div className="testimonia-detail">
-      <p className='description'>{props.description}</p>
       <p className='name'>{props.name}</p>
       <p className='position'>{props.position}</p>
+    </div>
+    <div className="testimonia-detail">
+      <div className='star'>
+
+      </div>
+      <p className='description'>{props.description}</p>
     </div>
   </div>
   )
@@ -37,8 +40,8 @@ const Home = () => {
       <Slide />
       <Homeproduct />
       <div>
-        Testimonial
         <div className="testimonial-container">
+          <p id='header'>Customer Testimonial</p>
           <Carousel responsive={responsive}>
             {Testimony}
           </Carousel>

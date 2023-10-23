@@ -147,14 +147,14 @@ export const Testimonial = [
   {
     id:1,
     image: require('./Home_component/personel-3.jpg'),
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem repellendus eum perspiciatis perferendis, odio, porro ut eos ipsam quia possimus nam hic soluta suscipit, similique minus sequi voluptate rerum.",
-    name: 'Lebga Lesly',
+    description: "HTMobile is a fantastic and one of a kind service. It has helped me to buy qaulity phones in a hassle free manner, multiple times. The service is vert convenient, with doorstep collection of phone, and immediate cash payment. The rates offered also are very competitive in the market.",
+    name: 'Ambe Kingley',
     position: 'customer'
   },
   {
     id:2,
     image: require('./Home_component/personel-3.jpg'),
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem repellendus eum perspiciatis perferendis, odio, porro ut eos ipsam quia possimus nam hic soluta suscipit, similique minus sequi voluptate rerum.",
+    description: "HTMobile has been a fantastic startup taht has brought so much value to the cameroonian population. We are proud to buy from them.",
     name: 'Lebga Lesly',
     position: 'customer'
   },
@@ -168,7 +168,7 @@ export const Testimonial = [
   {
     id:4,
     image: require('./Home_component/personel-3.jpg'),
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem repellendus eum perspiciatis perferendis, odio, porro ut eos ipsam quia possimus nam hic soluta suscipit, similique minus sequi voluptate rerum.",
+    description: "I am really like the original phones from HTMobile, well packaged and well reserved. In addition, at an affortable price i can get good phones like this. HTMobile Thank you.",
     name: 'Lebga Lesly',
     position: 'customer'
   },

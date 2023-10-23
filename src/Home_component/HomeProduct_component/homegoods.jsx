@@ -14,7 +14,7 @@ const AppleProduct = (props) => {
       <div className="product-details">
         <h2>{props.name} </h2>
         <p className="price">{props.price}</p>
-        <p><button>Add to Cart</button></p>
+        <p className='button'><button>Add to Cart</button> <button>Buy Now</button></p>
       </div>
     </div>
   )
@@ -28,7 +28,7 @@ const SamsungProduct = (props) => {
       <div className="product-details">
         <h2>{props.name} </h2>
         <p className="price">{props.price}</p>
-        <p><button>Add to Cart</button></p>
+        <p className='button'><button>Add to Cart</button> <button>Buy Now</button></p>
       </div>
     </div>
   )
@@ -37,12 +37,15 @@ const SamsungProduct = (props) => {
 const OfferProduct = (props) => {
   return (
     <div className="product-feature">
-      <p className= 'like_heart'><FaRegHeart /></p>
+      <div id='like_heart'>
+        <p className='offers'> 25% OFF</p>
+        <p className= 'like_heart'><FaRegHeart /></p>
+      </div>
       <img src={props.url} alt='Apple 11'/>
       <div className="product-details">
         <h2>{props.name} </h2>
         <p className="price">{props.price}</p>
-        <p><button>Add to Cart</button></p>
+        <p className='button'><button>Add to Cart</button> <button>Buy Now</button></p>
       </div>
     </div>
   )
