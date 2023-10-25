@@ -31,26 +31,26 @@ const settings = {
 const Apple = () => {
 
   //Fetching Products
-  const [{loading, products, error}, dispatch] = useReducer(reducer, {
+  const [{ loading, products, error}, dispatch] = useReducer(reducer, {
     products: [],
     loading: true,
     error: '' 
-  })
+  });
 
 
   useEffect(() => {
     const fetchData = async () => {
-      dispatch({type: 'FETCH_REQUEST'})
+      dispatch({type: 'FETCH_REQUEST'});
 
       try{
-          const result = await axios.get('/products/applephone')
-          dispatch({type: 'FETCH_SUCCESS', payload: result.data})
+          const result = await axios.get('products/applephone');
+          dispatch({type: 'FETCH_SUCCESS', payload: result.data});
       } catch(error) {
-          dispatch({type: 'FETCH_FAIL', payload: error.message})
+          dispatch({type: 'FETCH_FAIL', payload: error.message});
       }
-    }
+    };
     fetchData()
-  }, [])
+  }, []);
   return (
 
     <>
