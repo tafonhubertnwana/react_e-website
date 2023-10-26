@@ -13,8 +13,8 @@ const AppleProduct = (props) => {
       <img src={props.url} alt='Apple 11' />                                     
       <div className="product-details">
         <h2>{props.name} </h2>
-        <p className="price">{props.price}</p>
-        <p className='button'><button>Add to Cart</button> <button>Buy Now</button></p>
+        <p className="price"><button>{props.price}</button> </p>
+        <p className='button'><button>Add to Cart</button></p>
       </div>
     </div>
   )

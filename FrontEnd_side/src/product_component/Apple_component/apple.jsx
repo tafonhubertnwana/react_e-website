@@ -6,7 +6,7 @@ import { FaApple } from "react-icons/fa";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import reducer from '../../Reducers/ProductFetch'
 import axios from 'axios'
-
+import { FaRegHeart } from "react-icons/fa";
 
 import imageApple1 from './apple-image/Apple-iPhone-Pro.jpg'
 import imageApple2 from './apple-image/Apple-iPhone-15.jpg'
@@ -81,11 +81,12 @@ const Apple = () => {
       <div className="product-path ">
         {products.map((product) => {
           return (
-            <div className="product-section">
+            <div className="product-feature">
+              <p className= 'like_heart'><FaRegHeart /></p>
             <img src={product.imageurl} alt='Apple 11'/>
-            <div className="product-detail">
+            <div className="product-details">
               <h2>{product.name}</h2>
-              <p className="price">{product.price}</p>
+              <p className="price"><button>{product.price}</button></p>
               <p><button>Add to Cart</button></p>
             </div>
           </div>
