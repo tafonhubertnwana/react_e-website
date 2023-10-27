@@ -78,6 +78,10 @@ const Apple = () => {
           </div>
         </Carousel>
       </div>
+      <div className="apple-header">
+        <h2>Apple iPhone</h2>
+        <p>The latest collection of Apple iPhone 15s has arrived, Discover the entire lineup on both online and HTMobile stores. Experience the remarkable capabilities of the iPhone 15, Plus, Pro and Pro Max, brought to you by one of the global landing brands  </p>
+      </div>
       <div className="product-path ">
         {products.map((product) => {
           return (
@@ -87,18 +91,11 @@ const Apple = () => {
             <div className="product-details">
               <h2>{product.name}</h2>
               <p className="price"><button>{product.price}</button></p>
-              <p><button>Add to Cart</button></p>
+              <p className='button'><button>Add to Cart</button></p>
             </div>
           </div>
           )
-        })}
-        
-      </div>
-      <div>
-        <div className="backgrou">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quasi placeat quas beatae dicta totam delectus quae quaerat provident, odit nobis! Cupiditate nostrum consequatur quae dolorem et dignissimos culpa deleniti.
-            </p>
-        </div>
+        })} 
       </div>
       <div>
         <Footer />

@@ -31,7 +31,7 @@
 }
 
 .product-feature:hover{
-  transform: translateY(-10px)
+  transform: translateY(-10px);
 }
 
 .product-feature img{
@@ -76,11 +76,21 @@
 .product-details h2{
   font-size: 18px;
   text-align: center;
+  margin-top: 15px;
 }
 
 .product-details .price{
   text-align:center;
   font-size: 18px;
+  margin-top: 25px;
+  
+}
+
+.product-details .price button{
+  color: rgb(7, 7, 7);
+  background-color: #f7f1ea;
+  font-weight: 900;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .product-details .button{
@@ -99,13 +109,13 @@
   margin-bottom: 10px;
   align-content: center;
   cursor: pointer;
-  transition: transform 0.15s;
+  font-weight: 900;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .product-details button:hover{
   background-color: #302a1b;
   color: rgb(253, 251, 251);
-  transform: translateY(2px)
 }
 
 /*Banner*/
@@ -130,7 +140,7 @@ padding: 15% 5%;
   }
   
   .product-feature:hover{
-    transform: translateY(-10px)
+    transform: translateY(-10px);
   }
   
   .product-feature img{
