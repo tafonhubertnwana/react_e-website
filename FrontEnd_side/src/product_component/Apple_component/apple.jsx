@@ -80,7 +80,8 @@ const Apple = () => {
       </div>
       <div className="apple-header">
         <h2>Apple iPhone</h2>
-        <p>The latest collection of Apple iPhone 15s has arrived, Discover the entire lineup on both online and HTMobile stores. Experience the remarkable capabilities of the iPhone 15, Plus, Pro and Pro Max, brought to you by one of the global landing brands  </p>
+        <p>The latest collection of Apple iPhone 15s has arrived, Discover the entire lineup on both online and HTMobile stores. Experience the remarkable capabilities of the iPhone 15, Plus, Pro and Pro Max, brought to you by one of the global landing brands
+            </p>
       </div>
       <div className="product-path ">
         {products.map((product) => {
