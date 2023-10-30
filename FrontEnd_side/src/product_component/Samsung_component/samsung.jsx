@@ -9,6 +9,8 @@ import { FaRegHeart } from "react-icons/fa";
 
 import imageSamsung from './Samsung-banner-image/Samsung-S21.png';
 import imageSamsung1 from './Samsung-banner-image/Samsung-Galaxy-A54.webp';
+import bannerImage from "../app.jpg"
+import bannerImage2 from "../play.jpg"
 
 
 
@@ -95,6 +97,14 @@ const Samsung = () => {
           
         </div>
       </div>
+      <div className="samsung-banner">
+      <h1>Download Our App</h1>
+      <p>Get your best qaulity phones from the most famous brand</p>
+      <div className="bannerimage">
+        <img className="image" src={bannerImage} alt="" />
+        <img src={bannerImage2} alt="" />
+      </div>
+    </div>
       <div>
         <Footer />
       </div>

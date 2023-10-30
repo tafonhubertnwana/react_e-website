@@ -8,6 +8,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaRegHeart } from "react-icons/fa";
 import imagePixel from './google-banner-image/GP-7a.jpg';
 import imagePixel1 from './google-banner-image/Google-Pixel-Fold.webp';
+import bannerImage from "../app.jpg"
+import bannerImage2 from "../play.jpg"
 
 const settings = {
   showArrows: true,
@@ -89,6 +91,14 @@ const Google = () => {
             )
           })}
       
+        </div>
+      </div>
+      <div className="google-banner">
+        <h1>Download Our App</h1>
+        <p>Get your best qaulity phones from the most famous brand</p>
+        <div className="bannerimage">
+          <img className="image" src={bannerImage} alt="" />
+          <img src={bannerImage2} alt="" />
         </div>
       </div>
       <div>

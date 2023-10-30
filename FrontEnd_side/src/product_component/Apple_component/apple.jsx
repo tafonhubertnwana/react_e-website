@@ -10,7 +10,8 @@ import { FaRegHeart } from "react-icons/fa";
 
 import imageApple1 from './apple-image/Apple-iPhone-Pro.jpg'
 import imageApple2 from './apple-image/Apple-iPhone-15.jpg'
-
+import bannerImage from "../app.jpg"
+import bannerImage2 from "../play.jpg"
 
 const settings = {
   showArrows: true,
@@ -97,6 +98,14 @@ const Apple = () => {
           </div>
           )
         })} 
+      </div>
+      <div className="product-banner">
+        <h1>Download Our App</h1>
+        <p>Get your best qaulity phones from the most famous brand</p>
+        <div className="bannerimage">
+          <img className="image" src={bannerImage} alt="" />
+          <img src={bannerImage2} alt="" />
+        </div>
       </div>
       <div>
         <Footer />

@@ -53,4 +53,22 @@
   font-size: 20px;
 }
 
+/*banner*/
 
+.samsung-banner{
+  background-image: url('./Samsung-banner-image/samsung_banner.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+padding: 5% 5%;
+margin-bottom: 2.5%;
+color: white;
+}
+
+.bannerimage {
+ padding-top: 50px;
+}
+
+.bannerimage .image{
+  padding-right: 20px;
+}

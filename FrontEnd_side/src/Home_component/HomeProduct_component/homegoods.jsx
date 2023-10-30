@@ -1,9 +1,9 @@
 import React from 'react'
 import './homegoods.css'
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { AppleproductData, responsive, SamsungproductData, OfferproductData} from '../../data';
+import { AppleproductData,  OfferproductData} from '../../data';
 import { FaRegHeart } from "react-icons/fa";
+
 
 
 const AppleProduct = (props) => {
@@ -20,25 +20,11 @@ const AppleProduct = (props) => {
   )
 }
 
-const SamsungProduct = (props) => {
-  return (
-    <div className="product-feature">
-      <p className= 'like_heart'><FaRegHeart /></p>
-      <img src={props.url} alt='Apple 11'/>
-      <div className="product-details">
-        <h2>{props.name} </h2>
-        <p className="price"><button>{props.price}</button> </p>
-        <p className='button'><button>Add to Cart</button></p>
-      </div>
-    </div>
-  )
-}
-
 const OfferProduct = (props) => {
   return (
     <div className="product-feature">
       <div id='like_heart'>
-        <p className='offers'> 25% OFF</p>
+        <p className='offers'> {props.rate}</p>
         <p className= 'like_heart'><FaRegHeart /></p>
       </div>
       <img src={props.url} alt='Apple 11'/>
@@ -57,15 +43,7 @@ const product = AppleproductData.map((item) =>
     url={item.imageurl} 
     price={item.price}
     like={item.heart}
-  />
-)
-
-const productSamsung = SamsungproductData.map((item) => 
-  <SamsungProduct 
-    name={item.name} 
-    url={item.imageurl} 
-    price={item.price}
-    like={item.heart}
+    rate={item.rate}
   />
 )
 
@@ -83,27 +61,20 @@ const Homeproduct = () => {
   return (
     <>
       <div className="feature-categories">
-        <h1>Product Categories</h1>
-        <p>Apple Iphone Series</p>
+        <h1>WHAT IS HOT</h1>
       </div>
-      <Carousel responsive={responsive}>
+      <div className="product-container">
         {product}
-      </Carousel>
-      <div className="banner">
-        
       </div>
       <div className="feature-categories">  
-        <p>Samsung Series</p>
+        <h1>RECOMMENDED FOR YOU</h1>
       </div>
-      <Carousel responsive={responsive}>
-        {productSamsung}
-      </Carousel>
-      <div className="feature-categories">  
-        <p>Promotion Offers</p>
-      </div>
-  
+      <div className="product-container">
         {productPromotion}
-  
+      </div>
+      <div className="banner">
+
+      </div>
     </>
   )
 }

@@ -7,6 +7,9 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Testimonial, responsive} from './../data';
 
+import bannerImage from "../product_component/app.jpg"
+import bannerImage2 from "../product_component/play.jpg"
+
 const Testimonia = (props) => {
   return(
   <div className="testimonia-section">
@@ -46,6 +49,14 @@ const Home = () => {
           <Carousel responsive={responsive}>
             {Testimony}
           </Carousel>
+        </div>
+      </div>
+      <div className="product-banner">
+        <h1>Download Our App</h1>
+        <p>Get your best qaulity phones from the most famous brand</p>
+        <div className="bannerimage">
+          <img className="image" src={bannerImage} alt="" />
+          <img src={bannerImage2} alt="" />
         </div>
       </div>
       <Footer />

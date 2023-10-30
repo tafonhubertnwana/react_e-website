@@ -9,6 +9,8 @@ import { FaRegHeart } from "react-icons/fa";
 
 import imageVivo from './Vivo-banner-image/vivo-image.webp';
 import imageVivo1 from './Vivo-banner-image/vivo-v27.jpg'
+import bannerImage from "../app.jpg"
+import bannerImage2 from "../play.jpg"
 
 const settings = {
   showArrows: true,
@@ -87,6 +89,14 @@ const Vivo = () => {
             </div>
             )
           })}
+        </div>
+      </div>
+      <div className="vivo-banner">
+        <h1>Download Our App</h1>
+        <p>Get your best qaulity phones from the most famous brand</p>
+        <div className="bannerimage">
+          <img className="image" src={bannerImage} alt="" />
+          <img src={bannerImage2} alt="" />
         </div>
       </div>
       <div>

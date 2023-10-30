@@ -36,3 +36,22 @@
   flex-wrap: wrap;
   justify-content: space-evenly; 
 }
+
+
+.product-banner{
+  background-image: url('./apple-image/iphone_banner.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+padding: 5% 5%;
+margin-bottom: 2.5%;
+color: white;
+}
+
+.bannerimage {
+ padding-top: 50px;
+}
+
+.bannerimage .image{
+  padding-right: 20px;
+}
