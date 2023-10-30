@@ -274,18 +274,6 @@ export const VivoproductData = [
     name: "Vivo V27 Pro",
     price: "$1249",
     rate: "50% OFF"
-  },
-  {
-    imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1698245778/vivo_v25e_kmbpto.png",
-    name: "Vivo V25e",
-    price: "449",
-    rate: "50% OFF"
-  },
-  {
-    imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1698245696/vivo_29_Lite_5G_rejlt3.png",
-    name: "Vivo 29 Lite 5G",
-    price: "849",
-    rate: "50% OFF"
   }
 ]
 

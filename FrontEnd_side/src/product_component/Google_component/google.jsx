@@ -26,26 +26,28 @@ const settings = {
 
 const Google = () => {
 
-const [{ loading, products, error}, dispatch] = useReducer(reducer, {
+  //fetching Products
+  const [{loading, products, error}, dispatch] = useReducer(reducer, {
     products: [],
     loading: true,
-    error: '' 
+    error: ''
   });
 
-
   useEffect(() => {
-    const fetchData = async () => {
-      dispatch({type: 'FETCH_REQUEST'});
+    const fetchData= async () => {
+      dispatch({type: "FETCH_REQUEST" });
 
       try{
-          const result = await axios.get('GoogleProduct/googlephone');
-          dispatch({type: 'FETCH_SUCCESS', payload: result.data});
-      } catch(error) {
-          dispatch({type: 'FETCH_FAIL', payload: error.message});
+        const result = await axios.get("googleproduct/googlephone" )
+        dispatch({type: "FETCH_SUCCESS", payload: result.data});
+      } catch(error){
+        dispatch({type: "FETCH_FAIL", payload: error.message});
       }
     };
     fetchData()
   }, []);
+
+
   return (
     <>
       <div className='carousel-element'>
@@ -71,20 +73,23 @@ const [{ loading, products, error}, dispatch] = useReducer(reducer, {
           </div>
         </Carousel>
       </div>
-      <div className="product-path ">
-        {products.map((product) => {
-          return (
-            <div className="product-feature">
+      <div>
+        <div className="product-path ">
+          {products.map((product) => {
+            return(
+              <div className="product-feature">
               <p className= 'like_heart'><FaRegHeart /></p>
-            <img src={product.imageurl} alt='Apple 11'/>
-            <div className="product-details">
-              <h2>{product.name}</h2>
-              <p className="price"><button>{product.price}</button></p>
-              <p className='button'><button>Add to Cart</button></p>
+              <img src={product.imageurl} alt='Samsung Galazy Series'/>
+              <div className="product-details">
+                <h2>{product.name}</h2>
+                <p className="price"><button>{product.price}</button></p>
+                <p className='button'><button>Add to Cart</button></p>
+              </div>
             </div>
-          </div>
-          )
-        })} 
+            )
+          })}
+      
+        </div>
       </div>
       <div>
         <Footer />

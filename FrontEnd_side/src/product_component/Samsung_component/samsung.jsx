@@ -38,10 +38,10 @@ const Samsung = () => {
 
   useEffect(() => {
     const fetchData= async () => {
-      dispatch({type: "FECTH_REQUEST"});
+      dispatch({type: "FETCH_REQUEST"});
 
       try{
-        const result = await axios.get('products/applephone');
+        const result = await axios.get('samsungproduct/samsungphone');
         dispatch({type: "FETCH_SUCCESS", payload: result.data});
       } catch(error){
         dispatch({type: "FETCH_FAIL", payload: error.message});
@@ -82,11 +82,12 @@ const Samsung = () => {
           {products.map((product) => {
             return(
               <div className="product-feature">
-              <img src={product.imageurl} alt='Apple 11'/>
+              <p className= 'like_heart'><FaRegHeart /></p>
+              <img src={product.imageurl} alt='Samsung Galazy Series'/>
               <div className="product-details">
                 <h2>{product.name}</h2>
                 <p className="price"><button>{product.price}</button></p>
-                <p><button>Add to Cart</button></p>
+                <p className='button'><button>Add to Cart</button></p>
               </div>
             </div>
             )

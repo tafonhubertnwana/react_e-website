@@ -101,9 +101,9 @@ const Homeproduct = () => {
       <div className="feature-categories">  
         <p>Promotion Offers</p>
       </div>
-      <Carousel responsive={responsive}>
+  
         {productPromotion}
-      </Carousel>
+  
     </>
   )
 }
