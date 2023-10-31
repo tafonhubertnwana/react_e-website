@@ -22,17 +22,21 @@ export const AppleproductData = [
   {
     imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1698247754/apple_iphone_15_pro_max_256gb_Natural_titanium_qd0gyu.webp",
     name:"Apple Iphone 15 Pro Max 256GB (Natural Titanium)",
-    price:"$2199"
+    price:"$2199",
+    rate: "HOT"
   },
   {
     imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1698247543/apple_iphone_15_256gb_Black_a0czfk.webp",
     name:"Apple Iphone 15 256GB (Black)",
-    price:"$1699"
+    price:"$1699",
+    rate: "HOT"
+
   },
   {
     imageurl: "https://res.cloudinary.com/dbcydazok/image/upload/v1698244244/samsung_galazy_S23_ultra_5G_256gb_levender_klh14o.webp",
     name: "Samsung Galazy S23 ultra 5G 256GB (Levender)",
-    price: "$1949"
+    price: "$1949",
+    rate: "HOT"
   }
 ]
 

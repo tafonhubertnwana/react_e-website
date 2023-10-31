@@ -99,6 +99,44 @@ const Apple = () => {
           )
         })} 
       </div>
+      <div className="apple-header">
+        <h2>what is the latest iphone?</h2>
+        <p>the latest iphone series, the iPhone 15, has just been unveiled, and it's nothing short of amazing! Apple has introduced four models in this series, including</p>
+        <ul>
+          <li><a href="#">iPhone 15</a></li>
+          <li><a href="#">iPhone 15 Plus</a></li>
+          <li><a href="#">iPhone 15 Pro</a></li>
+          <li><a href="#">iPhone Pro Max</a></li>
+        </ul>
+
+        <p>with a host of exciting features and design changes, these series redefine what a smartphone can be. Buy yours today!</p>
+
+        <h2>Should I buy the iPohne 15</h2>
+        <p>Upgrading to the iPhone 15 is not just a lifestyle choice, it's getting yourself ready for the future of smartphones. Here's why:</p>
+        <ul>
+          <li>It's packed with the latest Apple technology.</li>
+          <li>The switch to a titanium frame makes it lighter and  more durable.</li>
+          <li>The A17 Bionic chip guarantees lightning-past performance.</li>
+          <li>It boasts impressive camera upgrades</li>
+          <li>Apple finally adapted the USB-C port for universal charging.</li>
+        </ul>
+
+        <h2>Why choose the Apple iPhone 15?</h2>
+        <p>If the reasons above aren't enough, you can also consider its cutting-edge upgrades like:</p>
+        <ul>
+          <li>A17 Bionic chip</li> 
+          <li>Longer battery life</li>
+          <li>Periscope zoom lens (for Pro Max)</li>
+          <li>Improved image stabilisation</li>
+          <li>Edge-to-edge OLED display</li>
+          <li>Titanium frame</li>
+          <li>Thin bezels</li>
+          <li>Crystal-clear visuals</li>
+          <li>Enhanced Face ID</li>
+        </ul>
+
+        <h2>What are the new features of the iPhone 15 </h2>
+      </div>
       <div className="product-banner">
         <h1>Download Our App</h1>
         <p>Get your best qaulity phones from the most famous brand</p>

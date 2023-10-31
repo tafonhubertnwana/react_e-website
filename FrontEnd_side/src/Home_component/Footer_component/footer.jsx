@@ -2,6 +2,7 @@ import React from 'react'
 import './footer.css'
 import { Link } from 'react-router-dom'
 import { FaFacebookF, FaTwitter, FaWhatsapp, FaLinkedin  } from 'react-icons/fa'
+import payimage from './pay.png'
 
 const Footer = () => {
   return (
@@ -31,6 +32,7 @@ const Footer = () => {
                 <li className='whatsapp'><FaWhatsapp /></li>
                 <li className="linkedin"><FaLinkedin /></li>
               </ul>
+              <img src={payimage} alt="" />
             </div>
             <div className="footer-col">
               <h2>Services</h2>

@@ -72,6 +72,12 @@
   padding-top: 8px;
 }
 
+.product-details .rater{
+  text-align: center;
+  font-size: 25px;
+  react-rater-active: yellow ;
+}
+
 .like_heart:hover{
  color: red;
 }
@@ -193,5 +199,5 @@ padding: 13% 5%;
 }
 
 @media only screen and (max-width: 480px) {
-
+  
 }

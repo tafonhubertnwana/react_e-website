@@ -3,6 +3,8 @@ import './homegoods.css'
 import 'react-multi-carousel/lib/styles.css';
 import { AppleproductData,  OfferproductData} from '../../data';
 import { FaRegHeart } from "react-icons/fa";
+import Rater from "react-rater";
+import 'react-rater/lib/react-rater.css'
 
 
 
@@ -13,6 +15,7 @@ const AppleProduct = (props) => {
       <img src={props.url} alt='Apple 11' />                                     
       <div className="product-details">
         <h2>{props.name} </h2>
+        <p className="rater"><Rater total={5} rating={4.5} reviews={150} /></p>
         <p className="price"><button>{props.price}</button> </p>
         <p className='button'><button>Add to Cart</button></p>
       </div>
