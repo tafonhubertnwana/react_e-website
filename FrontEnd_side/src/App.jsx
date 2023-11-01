@@ -10,6 +10,7 @@ import Apple from './product_component/Apple_component/apple';
 import Samsung from './product_component/Samsung_component/samsung';
 import Vivo from './product_component/Vivo_component/vivo';
 import Google from './product_component/Google_component/google';
+import Cart from './shoppingCart_component/cart'
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navbar />} >
             <Route index element={<Home />} />
+            <Route path='cart' element = {<Cart />} />
             <Route path='product' element= {<Product />} />
             <Route path='apple' element={<Apple />} />
             <Route path='samsung' element={<Samsung />} />

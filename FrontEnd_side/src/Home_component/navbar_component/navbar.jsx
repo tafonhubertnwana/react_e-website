@@ -17,7 +17,7 @@ export const Navbar = () =>{
           </form>
           <ul>
             <li className='faregheart'><FaRegHeart /></li>
-            <li><FaShoppingCart /></li>
+            <li><Link to = "cart"><FaShoppingCart /></Link></li>
           </ul>
           <button className='fauser'><FaUser />  Login</button>
         </section>

@@ -75,7 +75,6 @@
 .product-details .rater{
   text-align: center;
   font-size: 25px;
-  react-rater-active: yellow ;
 }
 
 .like_heart:hover{

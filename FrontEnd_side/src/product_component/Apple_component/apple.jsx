@@ -133,7 +133,7 @@ const Apple = () => {
           <li>Thin bezels</li>
           <li>Crystal-clear visuals</li>
           <li>Enhanced Face ID</li>
-        </ul>
+        </ul> 
 
         <h2>What are the new features of the iPhone 15 </h2>
       </div>
