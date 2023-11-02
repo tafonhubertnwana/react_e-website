@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import "react-toastify/dist/ReactToastify.css"
 import  Home  from './Home_component/home';
 import  Product  from './product_component/product';
 import  About  from './About_component/about';
@@ -11,6 +12,8 @@ import Samsung from './product_component/Samsung_component/samsung';
 import Vivo from './product_component/Vivo_component/vivo';
 import Google from './product_component/Google_component/google';
 import Cart from './shoppingCart_component/cart'
+import {ToastContainer } from "react-toastify";
+
 
 
 
@@ -18,6 +21,7 @@ import Cart from './shoppingCart_component/cart'
 function App() {
   return (
     <div>  
+        <ToastContainer />
         <Routes>
           <Route path="/" element={<Navbar />} >
             <Route index element={<Home />} />

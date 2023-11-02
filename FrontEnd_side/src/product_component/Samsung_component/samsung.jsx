@@ -11,6 +11,9 @@ import imageSamsung from './Samsung-banner-image/Samsung-S21.png';
 import imageSamsung1 from './Samsung-banner-image/Samsung-Galaxy-A54.webp';
 import bannerImage from "../app.jpg"
 import bannerImage2 from "../play.jpg"
+import { useDispatch} from "react-redux"
+import { addToCart } from '../../Reducers/CartSlice';
+import { useNavigate } from "react-router-dom"
 
 
 
@@ -31,6 +34,14 @@ const settings = {
 };
 
 const Samsung = () => {
+  //Add to Cart
+  const navigate = useNavigate()
+  const dispatchCart = useDispatch();
+  const handleAddToCart = (product) => {
+      dispatchCart(addToCart(product));
+      navigate("/cart")
+  }
+
   //fetching Products
   const [{loading, products, error}, dispatch] = useReducer(reducer, {
     products: [],
@@ -46,7 +57,7 @@ const Samsung = () => {
         const result = await axios.get('samsungproduct/samsungphone');
         dispatch({type: "FETCH_SUCCESS", payload: result.data});
       } catch(error){
-        dispatch({type: "FETCH_FAIL", payload: error.message});
+        dispatch({ type: "FETCH_FAIL", payload: error.message});
       }
     };
     fetchData()
@@ -89,7 +100,7 @@ const Samsung = () => {
               <div className="product-details">
                 <h2>{product.name}</h2>
                 <p className="price"><button>{product.price}</button></p>
-                <p className='button'><button>Add to Cart</button></p>
+                <p className='button'><button onClick = {() => handleAddToCart(product)}>Add to Cart</button></p>
               </div>
             </div>
             )
