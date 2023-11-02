@@ -9,7 +9,12 @@ import { FaRegHeart } from "react-icons/fa";
 import imagePixel from './google-banner-image/GP-7a.jpg';
 import imagePixel1 from './google-banner-image/Google-Pixel-Fold.webp';
 import bannerImage from "../app.jpg"
-import bannerImage2 from "../play.jpg"
+import bannerImage2 from "../play.jpg";
+
+import { addToCart } from '../../Reducers/CartSlice';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+
 
 const settings = {
   showArrows: true,
@@ -27,6 +32,14 @@ const settings = {
 };
 
 const Google = () => {
+
+  //Add to Cart
+  const navigate = useNavigate()
+  const dispatchCart = useDispatch();
+  const handleAddToCart = (product) => {
+      dispatchCart(addToCart(product));
+      navigate("/cart")
+  }
 
   //fetching Products
   const [{loading, products, error}, dispatch] = useReducer(reducer, {
@@ -85,7 +98,7 @@ const Google = () => {
               <div className="product-details">
                 <h2>{product.name}</h2>
                 <p className="price"><button>{product.price}</button></p>
-                <p className='button'><button>Add to Cart</button></p>
+                <p className='button'><button onClick = {() => handleAddToCart(product)}>Add to Cart</button></p>
               </div>
             </div>
             )

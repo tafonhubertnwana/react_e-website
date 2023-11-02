@@ -1,12 +1,26 @@
 import React from 'react';
 import './cart.css'
 import Footer from '../Home_component/Footer_component/footer'
-import {useSelector} from "react-redux";
+import {useSelector, useDispatch} from "react-redux";
 import { Link } from 'react-router-dom';
+import { removeFromCart, decreaseCart, addToCart } from '../Reducers/CartSlice';
 
 
 function Cart() {
   const cart = useSelector((state ) => state.cart);
+const dispatch = useDispatch()
+  const handleRemoveFromCart = (cartItem) => {
+    dispatch(removeFromCart(cartItem));
+  }
+
+  const handleDecreaseCart = (cartItem) => {
+    dispatch(decreaseCart(cartItem));
+  };
+
+  const handleIncreaseCart = (cartItem) => {
+    dispatch(addToCart(cartItem))
+  }
+
   return (
     <>
       <div className="cart-container">
@@ -37,17 +51,17 @@ function Cart() {
                     <div>
                       <h3>{cartItem.name}</h3>
                       <p>{cartItem.desc}</p>
-                      <button>Remove</button>
+                      <button onClick = {() => handleRemoveFromCart(cartItem)}>Remove</button>
                     </div>
                   </div>
-                  <div className="cart-ptoduct-price">${cartItem.price}</div>
+                  <div className="cart-ptoduct-price">{cartItem.price}</div>
                   <div className="cart-product-quantity">
-                    <button>-</button>
+                    <button onClick = {() => handleDecreaseCart(cartItem)}>-</button>
                     <div className="count">{cartItem.cartQuantity}</div>
-                    <button>+</button>
+                    <button onClick = {() => handleIncreaseCart(cartItem)}>+</button>
                   </div>
                   <div className="cart-product-total-price">
-                    ${cartItem.price * cartItem.cartQuantity}
+                    {cartItem.price * cartItem.cartQuantity}
                   </div>
                 </div>
               ))}
@@ -57,7 +71,7 @@ function Cart() {
               <div className="cart-checkout">
                 <div className="subtotal">
                   <span>Subtotal</span>
-                  <span className="amount">${cart.cartTotalAmount}</span>
+                  <span className="amount">{cart.cartTotalAmount}</span>
                 </div>
                 <p>Free Shipping</p>
                 <button>Check Out</button>
