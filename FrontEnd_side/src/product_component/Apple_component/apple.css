@@ -53,5 +53,29 @@ color: white;
 }
 
 .bannerimage .image{
-  padding-right: 20px;
+  padding-right: 30px;
 }
+
+/*Apple Header*/
+.product-header{
+  margin-top: 1.4rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 4rem;
+
+}
+
+.product-header h2{
+  font-size: 30px;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.product-header h2:hover{
+  color: grey;
+}
+
+.product-header p{
+  font-size: 18px;
+}
+

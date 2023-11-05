@@ -3,7 +3,7 @@ import './cart.css'
 import Footer from '../Home_component/Footer_component/footer'
 import {useSelector, useDispatch} from "react-redux";
 import { Link } from 'react-router-dom';
-import { removeFromCart, decreaseCart, addToCart } from '../Reducers/CartSlice';
+import { removeFromCart, decreaseCart, addToCart, clearCart } from '../Reducers/CartSlice';
 
 
 function Cart() {
@@ -21,6 +21,10 @@ const dispatch = useDispatch()
     dispatch(addToCart(cartItem))
   }
 
+  const handleClearCart = (cartItem) => {
+    dispatch(clearCart())
+  }
+
   return (
     <>
       <div className="cart-container">
@@ -29,7 +33,7 @@ const dispatch = useDispatch()
           <div className="cart-empty">
             <p>Your cart is currently empty</p>
             <div className="start-shopping">
-              <Link to="/product">
+              <Link to="/apple">
                 <span>Start Shopping</span>
               </Link>
             </div>
@@ -67,7 +71,7 @@ const dispatch = useDispatch()
               ))}
             </div>
             <div className="cart-summary">
-              <button className='clear-cart'>Clear Cart</button>
+              <button className='clear-cart' onClick={() => handleClearCart()}>Clear Cart</button>
               <div className="cart-checkout">
                 <div className="subtotal">
                   <span>Subtotal</span>

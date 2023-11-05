@@ -7,6 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import reducer from '../../Reducers/ProductFetch'
 import axios from 'axios'
 import { FaRegHeart } from "react-icons/fa";
+import Rater from "react-rater";
 
 import imageApple1 from './apple-image/Apple-iPhone-Pro.jpg'
 import imageApple2 from './apple-image/Apple-iPhone-15.jpg'
@@ -93,8 +94,8 @@ const Apple = () => {
           </div>
         </Carousel>
       </div>
-      <div className="apple-header">
-        <h2>Apple iPhone</h2>
+      <div className="product-header">
+        <h2>Apple iPhone Series</h2>
         <p>The latest collection of Apple iPhone 15s has arrived, Discover the entire lineup on both online and HTMobile stores. Experience the remarkable capabilities of the iPhone 15, Plus, Pro and Pro Max, brought to you by one of the global landing brands
             </p>
       </div>
@@ -106,50 +107,13 @@ const Apple = () => {
             <img src={product.imageurl} alt='Apple 11'/>
             <div className="product-details">
               <h2>{product.name}</h2>
+              <p className="react-rater"><Rater total={5} rating={4.5} reviews={150} /></p>
               <p className="price"><button>{product.price}</button></p>
               <p className='button'><button onClick = {() => handleAddToCart(product)}>Add to Cart</button></p>
             </div>
           </div>
           )
         })} 
-      </div>
-      <div className="apple-header">
-        <h2>what is the latest iphone?</h2>
-        <p>the latest iphone series, the iPhone 15, has just been unveiled, and it's nothing short of amazing! Apple has introduced four models in this series, including</p>
-        <ul>
-          <li><a href="#">iPhone 15</a></li>
-          <li><a href="#">iPhone 15 Plus</a></li>
-          <li><a href="#">iPhone 15 Pro</a></li>
-          <li><a href="#">iPhone Pro Max</a></li>
-        </ul>
-
-        <p>with a host of exciting features and design changes, these series redefine what a smartphone can be. Buy yours today!</p>
-
-        <h2>Should I buy the iPohne 15</h2>
-        <p>Upgrading to the iPhone 15 is not just a lifestyle choice, it's getting yourself ready for the future of smartphones. Here's why:</p>
-        <ul>
-          <li>It's packed with the latest Apple technology.</li>
-          <li>The switch to a titanium frame makes it lighter and  more durable.</li>
-          <li>The A17 Bionic chip guarantees lightning-past performance.</li>
-          <li>It boasts impressive camera upgrades</li>
-          <li>Apple finally adapted the USB-C port for universal charging.</li>
-        </ul>
-
-        <h2>Why choose the Apple iPhone 15?</h2>
-        <p>If the reasons above aren't enough, you can also consider its cutting-edge upgrades like:</p>
-        <ul>
-          <li>A17 Bionic chip</li> 
-          <li>Longer battery life</li>
-          <li>Periscope zoom lens (for Pro Max)</li>
-          <li>Improved image stabilisation</li>
-          <li>Edge-to-edge OLED display</li>
-          <li>Titanium frame</li>
-          <li>Thin bezels</li>
-          <li>Crystal-clear visuals</li>
-          <li>Enhanced Face ID</li>
-        </ul> 
-
-        <h2>What are the new features of the iPhone 15 </h2>
       </div>
       <div className="product-banner">
         <h1>Download Our App</h1>

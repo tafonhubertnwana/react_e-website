@@ -72,9 +72,13 @@
   padding-top: 8px;
 }
 
-.product-details .rater{
-  text-align: center;
-  font-size: 25px;
+.react-rater{
+  margin-top: 0.5rem;
+  color: rgb(255, 238, 0);
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+
 }
 
 .like_heart:hover{

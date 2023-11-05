@@ -2,7 +2,6 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import "react-toastify/dist/ReactToastify.css"
 import  Home  from './Home_component/home';
-import  Product  from './product_component/product';
 import  About  from './About_component/about';
 import  Blog  from './Blog_component/blog';
 import  Contact  from './Contact_component/contact';
@@ -26,7 +25,6 @@ function App() {
           <Route path="/" element={<Navbar />} >
             <Route index element={<Home />} />
             <Route path='cart' element = {<Cart />} />
-            <Route path='product' element= {<Product />} />
             <Route path='apple' element={<Apple />} />
             <Route path='samsung' element={<Samsung />} />
             <Route path='google' element={<Google />} />

@@ -24,12 +24,12 @@ export const Navbar = () =>{
         <nav>
           <ul>
             <li><Link to= '/'>Home</Link></li>
-            <li><Link to='product'>Products</Link>
+            <li><Link>Products</Link>
               <ul className="dropdown">
-                <li><Link to='apple'>Iphone</Link></li>
-                <li><Link to='samsung'> Samsung</Link></li>
-                <li><Link to="google">Google Pixel</Link></li>
-                <li><Link to="vivo">Vivo</Link></li>
+                <li><Link to='apple'>Apple Series</Link></li>
+                <li><Link to='samsung'> Samsung Galaxy Series</Link></li>
+                <li><Link to="google">Google Pixel Series</Link></li>
+                <li><Link to="vivo">Vivo Series</Link></li>
             </ul>
             </li>
             <li><Link to='blog'>Blog</Link></li>

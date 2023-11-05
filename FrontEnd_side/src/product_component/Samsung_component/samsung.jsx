@@ -6,6 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import reducer from "../../Reducers/ProductFetch"
 import axios from "axios";
 import { FaRegHeart } from "react-icons/fa";
+import Rater from "react-rater";
 
 import imageSamsung from './Samsung-banner-image/Samsung-S21.png';
 import imageSamsung1 from './Samsung-banner-image/Samsung-Galaxy-A54.webp';
@@ -90,6 +91,10 @@ const Samsung = () => {
           </div>
         </Carousel>
       </div>
+      <div className="product-header">
+        <h2>Samsung Galaxy</h2>
+        <p>Dive into the future with Samsung's latest Gaxazy S23 series, now joined by the innovative Z Fold 5 and Z Flip 5. These Android powerhouses boast top-tier features and enduring bettery life. From S23 series; immersive display to their unique design, there's a Samsung Galaxy for all</p>
+      </div>
       <div>
         <div className="product-path ">
           {products.map((product) => {
@@ -99,6 +104,7 @@ const Samsung = () => {
               <img src={product.imageurl} alt='Samsung Galazy Series'/>
               <div className="product-details">
                 <h2>{product.name}</h2>
+                <p className="react-rater"><Rater total={5} rating={4.5} reviews={150} /></p>
                 <p className="price"><button>{product.price}</button></p>
                 <p className='button'><button onClick = {() => handleAddToCart(product)}>Add to Cart</button></p>
               </div>

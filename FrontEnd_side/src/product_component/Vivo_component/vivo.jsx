@@ -6,6 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import reducer from "../../Reducers/ProductFetch"
 import axios from "axios"
 import { FaRegHeart } from "react-icons/fa";
+import Rater from "react-rater";
 
 import imageVivo from './Vivo-banner-image/vivo-image.webp';
 import imageVivo1 from './Vivo-banner-image/vivo-v27.jpg'
@@ -88,6 +89,11 @@ const Vivo = () => {
         </Carousel>
       </div>
       <div>
+      <div className="product-header">
+        <h2>Vivo Smartphones</h2>
+        <p>Explore the latest vivo mobile phone series with the best imaging texchnology and entertainment features, high-tech design, and advanced specifications. Leap into the feature with vivo innovative brands of smartphones with V27Pro and More.
+        </p>
+      </div>
       <div className="product-path ">
           {products.map((product) => {
             return(
@@ -96,6 +102,7 @@ const Vivo = () => {
               <img src={product.imageurl} alt='Samsung Galazy Series'/>
               <div className="product-details">
                 <h2>{product.name}</h2>
+                <p className="react-rater"><Rater total={5} rating={4.5} reviews={150} /></p>
                 <p className="price"><button>{product.price}</button></p>
                 <p className='button'><button onClick = {() => handleAddToCart(product)}>Add to Cart</button></p>
               </div>

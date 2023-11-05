@@ -10,6 +10,7 @@ import imagePixel from './google-banner-image/GP-7a.jpg';
 import imagePixel1 from './google-banner-image/Google-Pixel-Fold.webp';
 import bannerImage from "../app.jpg"
 import bannerImage2 from "../play.jpg";
+import Rater from "react-rater";
 
 import { addToCart } from '../../Reducers/CartSlice';
 import { useNavigate } from 'react-router-dom';
@@ -88,6 +89,11 @@ const Google = () => {
           </div>
         </Carousel>
       </div>
+      <div className="product-header">
+        <h2>Google Pixel</h2>
+        <p>When Googgle does things. it sets the bar high, and the Google Pixel seires is a testament to that. The latest Google phones, the Google Pixel 8, and Google Pixel 8 Pro feature powerful Tensor G3 chipsets, briliant colour options, and cutting-edge photo and video features.
+        </p>
+      </div>
       <div>
         <div className="product-path ">
           {products.map((product) => {
@@ -97,6 +103,7 @@ const Google = () => {
               <img src={product.imageurl} alt='Samsung Galazy Series'/>
               <div className="product-details">
                 <h2>{product.name}</h2>
+                <p className="react-rater"><Rater total={5} rating={4.5} reviews={150} /></p>
                 <p className="price"><button>{product.price}</button></p>
                 <p className='button'><button onClick = {() => handleAddToCart(product)}>Add to Cart</button></p>
               </div>

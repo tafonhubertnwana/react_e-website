@@ -21,9 +21,9 @@ const Testimonia = (props) => {
       <div className='star'>
 
       </div>
-      <p className='description'>{props.description}</p>
       <p className='name'>{props.name}</p>
       <p className='position'>{props.position}</p>
+      <p className='description'>{props.description}</p>
     </div>
   </div>
   )

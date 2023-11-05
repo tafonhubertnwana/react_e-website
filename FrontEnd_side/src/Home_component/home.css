@@ -15,10 +15,12 @@
   margin-left: 50px;
   margin-top:30px ;
   margin-bottom: 50px;
+  background: pink;
+
+
 }
 
 .testimonia-image{
-  box-sizing: content-box;
   width: 160px;  
   
 }
@@ -27,22 +29,13 @@
   border-radius: 50px;
   width: 80px;
   height: 80px;
+  align-: center;
   z-index: 9999999;
 }
 
 .testimonia-detail{
-  box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.411);
   padding-top: 50px;
   border-radius: 10px;
-  transition: transform 0.15s; 
-  max-height: 400px;
-  max-width: 400px;
-}
-
-.testimonia-detail:hover{
-  background-color: #e49102;
-  color: rgb(253, 251, 251);
-  transform: translateY(2px)
 }
 
 .testimonia-detail p{

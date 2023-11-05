@@ -16,13 +16,13 @@ const cartSlice = createSlice({
     addToCart(state, action) { 
       const itemIndex = state.cartItems.findIndex(
         (item) => item.id === action.payload.id);
-        if (itemIndex >= 0 ){
+        if (itemIndex >= 0) {
           state.cartItems[itemIndex].cartQuantity += 1;
           toast.info( `Increased ${state.cartItems[itemIndex].name} cart quantity`, {
             position: "bottom-left",
           });
         } else {
-          const tempProduct = {...action.payload, cartQuantity: 1};
+          const tempProduct = { ...action.payload, cartQuantity: 1 };
           state.cartItems.push(tempProduct);
           toast.success(` ${action.payload.name} added to cart`, {
             position: "bottom-left",
@@ -61,7 +61,7 @@ const cartSlice = createSlice({
         } else if (state.cartItems[itemIndex].cartQuantity === 1){
           const nextCartItems = state.cartItems.filter(
             cartItem => cartItem.id !== action.payload.id
-          )
+          ) 
     
           state.cartItems = nextCartItems;
           localStorage.setItem("cartItems", JSON.stringify(state.cartItems))
@@ -71,12 +71,20 @@ const cartSlice = createSlice({
           })
         }
         localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
+    },
+    //Clear Cart
+    clearCart(state, action) {
+      state.cartItems = [];
+      toast.error(`Car Cleared`, {
+        position: "botton-left"
+      });
+      localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
     }
   },
 
 });
 
-export const {addToCart, removeFromCart, decreaseCart} = cartSlice.actions;
+export const {addToCart, removeFromCart, decreaseCart, clearCart} = cartSlice.actions;
 
 export default cartSlice.reducer;
 

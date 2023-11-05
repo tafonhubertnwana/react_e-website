@@ -6,7 +6,8 @@
   height: 100%;
   padding-top: 4px;
   padding-bottom: 4px;
-  border-bottom: 1px solid #eeecec ;
+  border-bottom: 1px solid #ffffff ;
+  background: #1c1c1c;
 }
 
 .navbar .logo{
@@ -43,7 +44,7 @@
   padding-top: 13px;
   margin-right: 10px;
   margin-left: 20px;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 20px;
 }
 
@@ -58,38 +59,37 @@
   font-size: 20px;
   justify-content: space-evenly;
   cursor: pointer;
+  color: white;
 }
 
 .navbar ul .faregheart{
   padding-right: 30px;
+  color: white;
 }
 
 .navbar button{
   padding: 1px 10px;
   background-color: #B38B59;
-  color: white;
-  font-size: 19px;
+  color: rgb(34, 32, 32);
+  font-size: 16px;
   cursor: pointer;
   margin-left: 30px;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: opacity 0.15s;
   border-style: none;
   margin-right: 8%;
-  padding-left: 30px;
+  align-items: center;
 
 }
 
-.navbar .fauser{
-  padding-right: 40px;
-}
 
 .navbar button:hover{
   opacity: 0.6;
 }
 
 .navbar button:active{
-  background-color: #d6d1c9;
-  color: black;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -98,6 +98,7 @@ nav{
   padding-top: 1%;
   padding-bottom: 1%;
   border-bottom: 1px solid #eeecec ;
+  background: #302a18;
 }
 
 nav ul{
@@ -112,17 +113,17 @@ nav ul li{
 
 nav ul li a {
   padding: 20px 25px;
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   text-align: center;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 nav ul li ul.dropdown li{
   display:block;
   width: 100%;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+  border-bottom: 1px solid rgba(247, 244, 244, 0.63);
 }
 
 
@@ -132,14 +133,14 @@ nav ul li ul.dropdown{
   z-index: 999;
   display: none;
   cursor: pointer;
-  background: white;
+  background: rgb(0, 0, 0);
 }
 
 nav .dropdown{
   font-size: 20px;
   color: white;
-  width:150%;
-  font-weight: bold;
+  width:220%;
+  font-weight: 500;
 }
 
 nav .dropdown li{
@@ -150,7 +151,7 @@ nav .dropdown li{
 
 
 nav ul a:hover{
-  color: rgba(106, 106, 109, 0.596);
+  color: rgb(155, 113, 59);
 }
 
 nav ul li:hover ul.dropdown{
