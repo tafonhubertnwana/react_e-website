@@ -6,6 +6,7 @@ import Footer from './Footer_component/footer';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Testimonial, responsive} from './../data';
+import Rater from "react-rater";
 
 import bannerImage from "../product_component/app.jpg"
 import bannerImage2 from "../product_component/play.jpg"
@@ -18,11 +19,9 @@ const Testimonia = (props) => {
       
     </div>
     <div className="testimonia-detail">
-      <div className='star'>
-
-      </div>
       <p className='name'>{props.name}</p>
       <p className='position'>{props.position}</p>
+      <p className="react-rater"><Rater total={5} rating={4.5} reviews={150} /></p>
       <p className='description'>{props.description}</p>
     </div>
   </div>

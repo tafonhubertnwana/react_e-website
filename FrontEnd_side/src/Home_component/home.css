@@ -15,33 +15,45 @@
   margin-left: 50px;
   margin-top:30px ;
   margin-bottom: 50px;
-  background: pink;
-
+  box-shadow: 1px 3px 5px 4px rgba(0, 0, 0, 0.397);
+  border-style: none;
+  border-radius: 10px
 
 }
 
 .testimonia-image{
-  width: 160px;  
-  
+ padding-left:30%;
+ padding-top: 30px;
 }
 
 .testimonia-image img{
   border-radius: 50px;
   width: 80px;
   height: 80px;
-  align-: center;
-  z-index: 9999999;
 }
 
 .testimonia-detail{
-  padding-top: 50px;
-  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.testimonia-detail p{
-  text-align: justify;
-  font-weight: bold;
-  padding: 0 10px;
+.testimonia-detail .name{
+  color: rgba(26, 26, 26, 0.719);
+  font-size: 15px;
+ text-align: center; 
+}
+
+.testimonia-detail .position{
+  text-align: center;
+  font-size: 16px;
+  color: grey;
+  padding-top: 2.5px;
+}
+
+.testimonia-detail .description{
+  text-align: center;
+  font-weight: 300;
+  padding-top: 10px;
 }
 
 /*banner*/
