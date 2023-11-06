@@ -8,10 +8,10 @@ const productRoute = require('./routes/workout')
 const googleRoute = require("./routes/googleRoute")
 const samsungRoute = require("./routes/SamsungRoute")
 const vivoRoute = require('./routes/vivoRoute')
-const userRouter = require("./routes/user")
 
 //user Route
-const useRoutes = require('./routes/user')
+const useRoute = require('./routes/user')
+const loginRoute = require('./routes/login')
 
 
 // middleware
@@ -26,7 +26,8 @@ app.use('/products', productRoute)
 app.use('/googleproduct', googleRoute)
 app.use('/samsungproduct', samsungRoute)
 app.use('/vivoproduct', vivoRoute)
-app.use("/user", userRouter)
+app.use("/user", useRoute)
+app.use("/user", loginRoute)
 //connect to db
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {

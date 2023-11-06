@@ -16,4 +16,4 @@ const userJwt = (user) => {
 
 
 
-moduke.exports = userJwt
+module.exports = userJwt

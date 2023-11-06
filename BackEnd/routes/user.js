@@ -4,10 +4,12 @@ const router = express.Router()
 const bcrypt = require("bcrypt");
 const Joi = require("joi");
 
+
 const UserLogin = require("../models/UserLogin")
+const userJwt = require("../controllers/userjwt")
 
 //login route
-router.post('/login', async (req, res) => {
+router.post('/register', async (req, res) => {
   //joi
   const schema = Joi.object({
     name: Joi.string().min(3).max(30).required(),
@@ -28,7 +30,7 @@ router.post('/login', async (req, res) => {
   });
 
   //bcrypt
-  const salt = await bcrypt.salt(10);
+  const salt = await bcrypt.genSalt(10);
 
   user.password = await bcrypt.hash(user.password, salt)
 
@@ -40,12 +42,6 @@ router.post('/login', async (req, res) => {
   res.send(token)
 });
 
-module.expots = 
 
-
-//signup user
-router.post('/signup', (req, res) => {
-  res.json({mssg: " Signup user"})
-})
 
 module.exports = router
