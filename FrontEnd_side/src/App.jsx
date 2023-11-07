@@ -12,6 +12,8 @@ import Vivo from './product_component/Vivo_component/vivo';
 import Google from './product_component/Google_component/google';
 import Cart from './shoppingCart_component/cart'
 import {ToastContainer } from "react-toastify";
+import SignUp from "./Auth/register"
+
 
 
 
@@ -31,7 +33,8 @@ function App() {
             <Route path='vivo' element={<Vivo />} />
             <Route path='about' element={<About />} />
             <Route path="blog" element={<Blog />} />
-            <Route path='contact' element={<Contact />} />  
+            <Route path='contact' element={<Contact />} />
+            <Route path='signUp' element={<SignUp />} /> 
           </Route> 
         </Routes>  
     </div>

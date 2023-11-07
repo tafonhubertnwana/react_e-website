@@ -19,7 +19,7 @@ export const Navbar = () =>{
             <li className='faregheart'><FaRegHeart /></li>
             <li><Link to = "cart"><FaShoppingCart /></Link></li>
           </ul>
-          <button className='fauser'><FaUser />  Login</button>
+          <button className='fauser'><Link to = "signUp"><FaUser />Sign Up</Link></button>
         </section>
         <nav>
           <ul>
@@ -30,7 +30,7 @@ export const Navbar = () =>{
                 <li><Link to='samsung'> Samsung Galaxy Series</Link></li>
                 <li><Link to="google">Google Pixel Series</Link></li>
                 <li><Link to="vivo">Vivo Series</Link></li>
-            </ul>
+              </ul>
             </li>
             <li><Link to='blog'>Blog</Link></li>
             <li><Link to='about'>About</Link></li>
