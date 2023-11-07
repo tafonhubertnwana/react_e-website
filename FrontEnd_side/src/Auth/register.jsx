@@ -1,4 +1,12 @@
+import { useState} from "react";
+
 const signUp = () => {
+
+  const[user, setUser] = useState({
+    name: "",
+    email: "",
+    
+  })
   return (
     <>
       <form>

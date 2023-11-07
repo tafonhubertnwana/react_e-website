@@ -3,6 +3,10 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const googleProductSchema = new Schema({
+  imageurl: {
+    type: String,
+    required: true
+  },
   name: {
     type: String,
     required: true

@@ -13,7 +13,7 @@ import bannerImage2 from "../play.jpg";
 import Rater from "react-rater";
 
 import { addToCart } from '../../Reducers/CartSlice';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; 
 import { useDispatch } from 'react-redux';
 
 
@@ -100,7 +100,7 @@ const Google = () => {
             return(
               <div className="product-feature">
               <p className= 'like_heart'><FaRegHeart /></p>
-              <img src={product.imageurl} alt='Samsung Galazy Series'/>
+              <img src={product.imageurl} alt='Google Pixel'/>
               <div className="product-details">
                 <h2>{product.name}</h2>
                 <p className="react-rater"><Rater total={5} rating={4.5} reviews={150} /></p>
