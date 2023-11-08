@@ -13,6 +13,7 @@ import Google from './product_component/Google_component/google';
 import Cart from './shoppingCart_component/cart'
 import {ToastContainer } from "react-toastify";
 import SignUp from "./Auth/register"
+import Login from "./Auth/login"
 
 
 
@@ -27,6 +28,8 @@ function App() {
           <Route path="/" element={<Navbar />} >
             <Route index element={<Home />} />
             <Route path='cart' element = {<Cart />} />
+            <Route path='signUp' element={<SignUp />} /> 
+            <Route path='login' element={<Login />} />
             <Route path='apple' element={<Apple />} />
             <Route path='samsung' element={<Samsung />} />
             <Route path='google' element={<Google />} />
@@ -34,7 +37,7 @@ function App() {
             <Route path='about' element={<About />} />
             <Route path="blog" element={<Blog />} />
             <Route path='contact' element={<Contact />} />
-            <Route path='signUp' element={<SignUp />} /> 
+            
           </Route> 
         </Routes>  
     </div>

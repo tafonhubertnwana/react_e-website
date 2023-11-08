@@ -1,17 +1,21 @@
 import React from 'react';
 import './cart.css'
 import Footer from '../Home_component/Footer_component/footer'
-import {useSelector, useDispatch} from "react-redux";
-import { Link } from 'react-router-dom';
+import {useSelector, useDispatch } from "react-redux";
+import { Link, useNavigate} from 'react-router-dom';
 import { removeFromCart, decreaseCart, addToCart, clearCart } from '../Reducers/CartSlice';
+
 
 
 function Cart() {
   const cart = useSelector((state ) => state.cart);
+  const auth = useSelector((state ) => state.auth);
 const dispatch = useDispatch()
   const handleRemoveFromCart = (cartItem) => {
     dispatch(removeFromCart(cartItem));
   }
+
+  const navigate = useNavigate()
 
   const handleDecreaseCart = (cartItem) => {
     dispatch(decreaseCart(cartItem));
@@ -78,7 +82,20 @@ const dispatch = useDispatch()
                   <span className="amount">{cart.cartTotalAmount}</span>
                 </div>
                 <p>Free Shipping</p>
-                <button>Check Out</button>
+                {
+                  auth._id ? (
+                  <button>Check Out</button>
+                  ) : (
+                  <button className="cart-login" onClick={() => navigate("/login")}>Login to Check out</button>
+                  )
+                }
+
+                <div className="start-shopping">
+                  <Link to="/apple">
+                    <span>Continue Shopping</span>
+                  </Link>
+                </div>
+                
               </div>
             </div>
           </div>

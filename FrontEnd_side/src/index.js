@@ -6,13 +6,13 @@ import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import cartReducer from './Reducers/CartSlice';
-import {AuthSlice} from './Reducers/authSlice';
-import registerUser from './Reducers/authSlice';
+import authReducer from './authentication/authSlice';
+
 
 const store = configureStore({
   reducer: {
     cart: cartReducer,
-    auth: AuthSlice
+    auth: authReducer
   }
 })
 

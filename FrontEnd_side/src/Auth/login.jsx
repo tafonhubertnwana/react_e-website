@@ -1,11 +1,11 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState, useEffect  } from "react";
 import {useDispatch, useSelector} from "react-redux";
-import { registerUser } from '../authentication/authSlice';
+import { loginUser } from "../authentication/authSlice";
 import { StyledForm } from "./sytledForm";
 import { useNavigate } from "react-router-dom";
 
-const signUp = () => {
+const Login= () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const dispatch = useDispatch();
   const Navigate = useNavigate();
@@ -13,12 +13,11 @@ const signUp = () => {
 
   useEffect(() => {
     if(auth._id){
-      Navigate("/home")
+      Navigate("/home");
     }
   }, [auth._id, Navigate]);
 
   const [user, setUser] = useState({
-    name: "",
     email: "",
     password: "",
   });
@@ -26,7 +25,7 @@ const signUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    dispatch(registerUser(user))
+    dispatch(loginUser(user))
   }
 
   
@@ -34,13 +33,8 @@ const signUp = () => {
   return (
     <>
       <StyledForm onSubmit ={handleSubmit}>
-        <h2>Sign Up</h2>
-        <input 
-          type="text" 
-          placeholder="name" 
-          onChange = {(e)=> setUser({...user, name: e.target.value}) }
-        />
-
+        <h2>Login</h2>
+        
         <input 
           type="email" 
           placeholder="email" 
@@ -54,15 +48,15 @@ const signUp = () => {
         />
 
         <button>
-          {auth.registerStatus === "pending" ? "Submitting" : "Register"}
+          {auth.loginStatus === "pending" ? "Submitting" : "login"}
         </button>
 
-        {auth.registerStatus === "rejected" ? (
-          <p>{auth.registerError}</p>
+        {auth.loginStatus === "rejected" ? (
+          <p>{auth.loginError}</p>
         ) : null}
       </StyledForm>
     </>
   )
 }
 
-export default signUp;
+export default Login;

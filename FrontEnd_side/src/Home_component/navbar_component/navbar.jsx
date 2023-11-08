@@ -1,11 +1,19 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import './navbar.css'
-import { FaSearch, FaShoppingCart, FaUser, FaRegHeart  } from 'react-icons/fa'
+import { FaSearch, FaShoppingCart, FaRegHeart  } from 'react-icons/fa'
+import {useSelector, useDispatch } from "react-redux"
+import styled from 'styled-components';
+import { toast } from 'react-toastify';
+import { logoutUser } from "../../authentication/authSlice";
 
 
 
 export const Navbar = () =>{
+
+  const dispatch = useDispatch()
+
+  const {auth} = useSelector((state) => state.auth)
   return(
     <>
       <div>
@@ -19,7 +27,23 @@ export const Navbar = () =>{
             <li className='faregheart'><FaRegHeart /></li>
             <li><Link to = "cart"><FaShoppingCart /></Link></li>
           </ul>
-          <button className='fauser'><Link to = "signUp"><FaUser />Sign Up</Link></button>
+          
+          {
+            auth._id ? (
+              <Logout onClick={() => {
+              dispatch(logoutUser(null))
+              toast.warning("logged Out!" , {
+              position: "bottom-right"})
+            }}
+            >
+              Logout
+            </Logout>
+            ) : (
+            <AuthLinks>
+              <Link to ="login">Login</Link>
+              <Link to= 'signUp'>Sign Up</Link>
+            </AuthLinks>)
+          }
         </section>
         <nav>
           <ul>
@@ -43,3 +67,19 @@ export const Navbar = () =>{
     </>
   )
 };
+
+
+const AuthLinks = styled.div`
+  a{
+    &:last-child{
+      margin-left: 2rem; 
+    }
+  }
+
+`;
+
+
+const Logout = styled.div`
+  color: white;
+  cursor: pointer;
+`;
