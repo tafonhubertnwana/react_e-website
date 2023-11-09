@@ -105,7 +105,7 @@ const Samsung = () => {
               <div className="product-details">
                 <h2>{product.name}</h2>
                 <p className="react-rater"><Rater total={5} rating={4.5} reviews={150} /></p>
-                <p className="price"><button>{product.price}</button></p>
+                <p className="price"><button>${product.price}</button></p>
                 <p className='button'><button onClick = {() => handleAddToCart(product)}>Add to Cart</button></p>
               </div>
             </div>

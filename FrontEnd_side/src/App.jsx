@@ -12,7 +12,7 @@ import Vivo from './product_component/Vivo_component/vivo';
 import Google from './product_component/Google_component/google';
 import Cart from './shoppingCart_component/cart'
 import {ToastContainer } from "react-toastify";
-import SignUp from "./Auth/register"
+import SignUp from "./Auth/SignUp"
 import Login from "./Auth/login"
 
 
@@ -28,7 +28,7 @@ function App() {
           <Route path="/" element={<Navbar />} >
             <Route index element={<Home />} />
             <Route path='cart' element = {<Cart />} />
-            <Route path='signUp' element={<SignUp />} /> 
+            <Route path='signup' element={<SignUp />} /> 
             <Route path='login' element={<Login />} />
             <Route path='apple' element={<Apple />} />
             <Route path='samsung' element={<Samsung />} />

@@ -1,62 +1,36 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-import { useState, useEffect  } from "react";
-import {useDispatch, useSelector} from "react-redux";
-import { loginUser } from "../authentication/authSlice";
-import { StyledForm } from "./sytledForm";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react"
+import "./SignUp"
 
-const Login= () => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const dispatch = useDispatch();
-  const Navigate = useNavigate();
-  const auth = useSelector((state) => state.auth)
+const Login = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 
-  useEffect(() => {
-    if(auth._id){
-      Navigate("/home");
-    }
-  }, [auth._id, Navigate]);
-
-  const [user, setUser] = useState({
-    email: "",
-    password: "",
-  });
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
 
-    dispatch(loginUser(user))
+    console.log(email, password)
   }
 
-  
-
   return (
-    <>
-      <StyledForm onSubmit ={handleSubmit}>
-        <h2>Login</h2>
-        
-        <input 
-          type="email" 
-          placeholder="email" 
-          onChange = {(e)=> setUser({...user, email: e.target.value}) } 
-        />
+    <form className="signup" onSubmit={handleSubmit}>
+      <h3>Log In</h3>
+      
+      <label>Email address:</label>
+      <input 
+        type="email" 
+        onChange={(e) => setEmail(e.target.value)} 
+        value={email} 
+      />
+      <label>Password:</label>
+      <input 
+        type="password" 
+        onChange={(e) => setPassword(e.target.value)} 
+        value={password} 
+      />
 
-        <input 
-          type="password" 
-          placeholder="password" 
-          onChange = {(e)=> setUser({...user, password: e.target.value}) }
-        />
-
-        <button>
-          {auth.loginStatus === "pending" ? "Submitting" : "login"}
-        </button>
-
-        {auth.loginStatus === "rejected" ? (
-          <p>{auth.loginError}</p>
-        ) : null}
-      </StyledForm>
-    </>
+      <button>Log in</button>
+    </form>
   )
 }
 
-export default Login;
+export default Login

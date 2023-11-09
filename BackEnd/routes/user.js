@@ -8,7 +8,7 @@ const Joi = require("joi");
 const UserLogin = require("../models/UserLogin")
 const userJwt = require("../controllers/userjwt")
 
-//register route
+//Login route
 router.post('/register', async (req, res) => {
   //joi
   const schema = Joi.object({
@@ -41,6 +41,8 @@ router.post('/register', async (req, res) => {
   //send to frontend
   res.send(token)
 });
+
+//signup Router
 
 
 
