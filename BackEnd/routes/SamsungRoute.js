@@ -12,7 +12,8 @@ router.use(requireAuth)
 router.get('/samsungphone', async (req, res) => {
 
   try {
-      const samsungproduct = await SamsungProductModel.find()
+      user_id = req.user._id
+      const samsungproduct = await SamsungProductModel.find({user_id})
       res.status(201).json(samsungproduct)
   } catch(error) {
     console.error({error: 'Could not Get Products'})
@@ -24,6 +25,7 @@ router.get('/samsungphone', async (req, res) => {
 router.post('/samsungphone', async (req, res) => {
  
   try{
+    const user_id = req.user._id
     const samsungproduct = await SamsungProductModel.create( req.body)
     res.status(200).json(samsungproduct)
   }catch(error){

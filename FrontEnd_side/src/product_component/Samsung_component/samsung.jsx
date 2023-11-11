@@ -16,6 +16,10 @@ import { useDispatch} from "react-redux"
 import { addToCart } from '../../Reducers/CartSlice';
 import { useNavigate } from "react-router-dom"
 
+import {useAuthContext} from '../../authentication/useAuthContext'
+
+
+
 
 
 
@@ -43,6 +47,7 @@ const Samsung = () => {
       navigate("/cart")
   }
 
+  const {user} = useAuthContext()
   //fetching Products
   const [{loading, products, error}, dispatch] = useReducer(reducer, {
     products: [],
@@ -55,14 +60,22 @@ const Samsung = () => {
       dispatch({type: "FETCH_REQUEST"});
 
       try{
-        const result = await axios.get('samsungproduct/samsungphone');
+        const result = await axios.get('samsungproduct/samsungphone', {
+          headers: {
+          'Authorization': `Bearer ${user.token}`
+          }
+        });
         dispatch({type: "FETCH_SUCCESS", payload: result.data});
       } catch(error){
         dispatch({ type: "FETCH_FAIL", payload: error.message});
       }
     };
-    fetchData()
-  }, []);
+
+    if(user){
+      fetchData()
+    }
+
+  }, [user]);
 
 
 

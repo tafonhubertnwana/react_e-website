@@ -16,6 +16,8 @@ import { addToCart } from '../../Reducers/CartSlice';
 import { useNavigate } from 'react-router-dom'; 
 import { useDispatch } from 'react-redux';
 
+import {useAuthContext} from '../../authentication/useAuthContext'
+
 
 const settings = {
   showArrows: true,
@@ -42,6 +44,8 @@ const Google = () => {
       navigate("/cart")
   }
 
+  const {user} = useAuthContext()
+
   //fetching Products
   const [{loading, products, error}, dispatch] = useReducer(reducer, {
     products: [],
@@ -54,14 +58,21 @@ const Google = () => {
       dispatch({type: "FETCH_REQUEST" });
 
       try{
-        const result = await axios.get("googleproduct/googlephone" )
+        const result = await axios.get("googleproduct/googlephone" , {
+          headers: {
+          'Authorization': `Bearer ${user.token}`
+          }
+        })
         dispatch({type: "FETCH_SUCCESS", payload: result.data});
       } catch(error){
         dispatch({type: "FETCH_FAIL", payload: error.message});
       }
     };
-    fetchData()
-  }, []);
+    if(user){
+      fetchData()
+    }
+
+  }, [user]);
 
 
   return (

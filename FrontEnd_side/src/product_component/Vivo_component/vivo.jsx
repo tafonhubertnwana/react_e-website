@@ -16,6 +16,7 @@ import bannerImage2 from "../play.jpg"
 import { useDispatch} from "react-redux"
 import { addToCart } from '../../Reducers/CartSlice';
 import { useNavigate } from "react-router-dom"
+import {useAuthContext} from '../../authentication/useAuthContext'
 
 const settings = {
   showArrows: true,
@@ -41,6 +42,7 @@ const Vivo = () => {
       navigate("/cart")
   }
 
+  const {user} = useAuthContext()
 
   //Fetching Products
   const [{loading, products, error}, dispatch] = useReducer(reducer, {
@@ -54,14 +56,20 @@ const Vivo = () => {
       dispatch({type: "FETCH_REQUEST"});
 
       try{
-        const result = await axios.get("vivoproduct/vivophone");
+        const result = await axios.get("vivoproduct/vivophone", {
+          headers: {
+          'Authorization': `Bearer ${user.token}`
+        }
+          });
         dispatch({type: "FETCH_SUCCESS", payload: result.data});
       } catch(error){
         dispatch({type: "FETCH_FAIL", payload: error.message});
       }
     };
-    fetchData()
-  }, [])
+    if(user){
+      fetchData()
+    }
+  }, [user])
 
   return (
     <>

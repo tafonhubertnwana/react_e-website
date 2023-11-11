@@ -1,4 +1,5 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate} from 'react-router-dom';
+import {useAuthContext} from './authentication/useAuthContext'
 import './App.css';
 import "react-toastify/dist/ReactToastify.css"
 import  Home  from './Home_component/home';
@@ -21,6 +22,7 @@ import Login from "./Auth/login"
 
 
 function App() {
+  const {user} = useAuthContext()
   return (
     <div>  
         <ToastContainer />
@@ -28,12 +30,12 @@ function App() {
           <Route path="/" element={<Navbar />} >
             <Route index element={<Home />} />
             <Route path='cart' element = {<Cart />} />
-            <Route path='signup' element={<SignUp />} /> 
-            <Route path='login' element={<Login />} />
-            <Route path='apple' element={<Apple />} />
-            <Route path='samsung' element={<Samsung />} />
-            <Route path='google' element={<Google />} />
-            <Route path='vivo' element={<Vivo />} />
+            <Route path='signup' element={!user ? <SignUp /> : <Navigate to='/'/>} /> 
+            <Route path='login' element={ !user ? <Login /> : <Navigate to='/'/>} />
+            <Route path='apple' element={user ? <Apple /> : <Navigate to ='/signup'/>} />
+            <Route path='samsung' element={user ? <Samsung /> : <Navigate to='/signup'/>} />
+            <Route path='google' element={user ? <Google /> : <Navigate to='/signup'/>} />
+            <Route path='vivo' element={user ? <Vivo /> : <Navigate to ="/signup"/>} />
             <Route path='about' element={<About />} />
             <Route path="blog" element={<Blog />} />
             <Route path='contact' element={<Contact />} />

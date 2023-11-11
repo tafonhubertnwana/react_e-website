@@ -14,6 +14,10 @@ const samsungProductSchema = new Schema({
   price: {
     type: String,
     required: true
+  },
+  user_id:{
+    type: String,
+    required: true
   }
 })
 
