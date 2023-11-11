@@ -1,8 +1,12 @@
 const express = require('express')
 const router = express.Router()
+const requireAuth = require('../middleware/requireauth')
 
 //model imports
 const SamsungProductModel = require('../models/SamsungProductModel')
+
+//require auth for all route
+router.use(requireAuth)
 
 //GET Apple Phone
 router.get('/samsungphone', async (req, res) => {

@@ -2,8 +2,17 @@ import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import './navbar.css'
 import { FaSearch, FaShoppingCart, FaRegHeart  } from 'react-icons/fa'
+import { useLogout } from '../../authentication/useLogout'
+import { useAuthContext } from '../../authentication/useAuthContext'
 
 export const Navbar = () =>{
+
+  const {logout} = useLogout()
+  const {user} = useAuthContext()
+
+  const handleClick = () => {
+    logout()
+  }
 
   return(
     <>
@@ -14,12 +23,22 @@ export const Navbar = () =>{
             <input type="text" placeholder="Search...." />
             <Link className='fasearch'><FaSearch /></Link> 
           </form>
-          <ul>
-            <li className='faregheart'><FaRegHeart /></li>
-            <li><Link to = "cart"><FaShoppingCart /></Link></li>
-            <Link to ="login">Login</Link>
-            <Link to= 'signup'>Signup</Link>
-          </ul>
+          <p><Link to = "cart"><FaShoppingCart /></Link></p>
+          <div className="nav">
+            {user && ( 
+            <div>
+              <span>{user.email}</span>
+              <button onClick={handleClick}>Log out</button>
+            </div>
+            )}
+            { !user && (
+            <div>
+              <Link to ="login">Login</Link>
+              <Link to= 'signup'>Signup</Link>
+            </div>
+            )}
+          </div>
+          
         </section>
         <nav>
           <ul>
