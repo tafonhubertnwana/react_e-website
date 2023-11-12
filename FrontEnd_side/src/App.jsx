@@ -32,10 +32,10 @@ function App() {
             <Route path='cart' element = {<Cart />} />
             <Route path='signup' element={!user ? <SignUp /> : <Navigate to='/'/>} /> 
             <Route path='login' element={ !user ? <Login /> : <Navigate to='/'/>} />
-            <Route path='apple' element={user ? <Apple /> : <Navigate to ='/signup'/>} />
-            <Route path='samsung' element={user ? <Samsung /> : <Navigate to='/signup'/>} />
-            <Route path='google' element={user ? <Google /> : <Navigate to='/signup'/>} />
-            <Route path='vivo' element={user ? <Vivo /> : <Navigate to ="/signup"/>} />
+            <Route path='apple' element={user ? <Apple /> : <Navigate to ='/login'/>} />
+            <Route path='samsung' element={user ? <Samsung /> : <Navigate to='/login'/>} />
+            <Route path='google' element={user ? <Google /> : <Navigate to='/login'/>} />
+            <Route path='vivo' element={user ? <Vivo /> : <Navigate to ="/login"/>} />
             <Route path='about' element={<About />} />
             <Route path="blog" element={<Blog />} />
             <Route path='contact' element={<Contact />} />

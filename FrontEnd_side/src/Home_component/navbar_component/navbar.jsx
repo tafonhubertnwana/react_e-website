@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import './navbar.css'
-import { FaSearch, FaShoppingCart, FaRegHeart  } from 'react-icons/fa'
+import { FaSearch, FaShoppingCart} from 'react-icons/fa'
 import { useLogout } from '../../authentication/useLogout'
 import { useAuthContext } from '../../authentication/useAuthContext'
 
@@ -23,18 +23,20 @@ export const Navbar = () =>{
             <input type="text" placeholder="Search...." />
             <Link className='fasearch'><FaSearch /></Link> 
           </form>
-          <p><Link to = "cart"><FaShoppingCart /></Link></p>
-          <div className="nav">
+          <p className='cart'><a href="cart"><FaShoppingCart /></a></p>
+          <div id="nav">
             {user && ( 
-            <div>
+            <div id='logout'>
               <span>{user.email}</span>
-              <button onClick={handleClick}>Log out</button>
+              <button onClick={handleClick}>Logout</button>
             </div>
             )}
             { !user && (
-            <div>
-              <Link to ="login">Login</Link>
-              <Link to= 'signup'>Signup</Link>
+            <div id='login'>
+              <ul>
+                <li><a href="login">Login</a></li>
+                <li><a href="signup">Signup</a></li>
+              </ul>
             </div>
             )}
           </div>

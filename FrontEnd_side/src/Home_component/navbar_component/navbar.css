@@ -1,11 +1,9 @@
 /* Navbar 1 */
 .navbar{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
   height: 100%;
-  padding-top: 4px;
-  padding-bottom: 4px;
   border-bottom: 1px solid #ffffff ;
   background: #1c1c1c;
 }
@@ -13,73 +11,95 @@
 .navbar .logo{
   font-size: 30px;
   color: rgb(255, 136, 0);
-  margin-left: 0;
   text-align: left;
   text-decoration: none;
   font-weight: 900;
-  margin-left: 30%;
+  margin-left: 20%;
+  margin-right: 30px;
 }
 
 .navbar form{
-  width: 50%;
+  width: 40%;
   align-content: center;
   display: flex;
-  border-radius: 15px;
+  border-radius: 5px;
   background: #fafafa;
-  margin-left: 7%;
 }
 
 .navbar form input{
   width: 100%;
   background-color: transparent;
-  border-radius: 30px;
   height: 100%;
-  border: none;
-  margin-left: 10px;
+  border-style: none;
   outline: 10px;
   font-size: 18px;
 }
 
 .navbar .fasearch{
+  padding: 13px 13px;
+ 
+  color: rgb(10, 10, 10);
+  font-size: 20px;
+  background-color: grey;
+}
+
+.navbar .fasearch:hover{
+  color: rgb(255, 251, 251);
+  background-color: #000000;
+}
+
+.navbar .cart{
   padding-top: 13px;
-  margin-right: 10px;
-  margin-left: 20px;
-  color: rgb(255, 255, 255);
+}
+
+.navbar .cart a{
+  color: rgb(255, 253, 253);
+  font-size: 25px;
+}
+
+
+.navbar #login ul{
+  display: flex;
+  padding: 13px 10px;
+}
+
+.navbar #login ul li {
+  justify-content: space-around;
   font-size: 20px;
-}
-
-.navbar ul{
-  display: inline-flex;
-  padding: 10px;
-}
-
-.navbar ul li{
-  text-decoration: none;
   list-style: none;
-  font-size: 20px;
-  justify-content: space-evenly;
-  cursor: pointer;
-  color: white;
+  margin: 0 30px;
 }
 
-.navbar ul .faregheart{
-  padding-right: 30px;
-  color: white;
+.navbar #login ul li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
+
+
+#logout{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 13px;
+}
+
+#logout span{
+  color: white;
+  font-size: 20px;
+}
+
 
 .navbar button{
-  padding: 1px 10px;
-  background-color: #B38B59;
+  padding: 1px 30px;
+  background-color: #ffffff;
   color: rgb(34, 32, 32);
   font-size: 16px;
   cursor: pointer;
-  margin-left: 30px;
+  margin-left:20px;
   border-radius: 5px;
   transition: opacity 0.15s;
   border-style: none;
   margin-right: 8%;
   align-items: center;
-
 }
 
 
