@@ -81,44 +81,38 @@ export const OfferproductData = [
 export const Testimonial = [
   {
     id:1,
-    image: require('./Home_component/personel-3.jpg'),
-    description: "HTMobile is a fantastic and one of a kind service. It has helped me to buy qaulity phones in a hassle free manner, multiple times. The service is vert convenient, with doorstep collection of phone, and immediate cash payment. The rates offered also are very competitive in the market.",
-    name: 'Ambe Kingley',
-    position: 'customer'
+    image: require('./Home_component/testimonial_images/cyrion.jpg'),
+    description: "The service is vert convenient, with doorstep collection of phone, and immediate cash payment. The rates offered also are very competitive in the market.",
+    name: 'Mr. Cyrion',
+    position: 'CEO of Press Perfect'
   },
   {
     id:2,
-    image: require('./Home_component/personel-3.jpg'),
-    description: "HTMobile is a fantastic and one of a kind service. It has helped me to buy qaulity phones in a hassle free manner, multiple times. The service is vert convenient, with doorstep collection of phone, and immediate cash payment. The rates offered also are very competitive in the market..",
-    name: 'Lebga Lesly',
-    position: 'customer'
+    image: require('./Home_component/testimonial_images/arrey.jpg'),
+    description: "It was a smooth transaction. The store manager was very helpful and the process was simple. Nice experience. Payment was very instant and the whole process was quick. Will recommend it.",
+    name: 'Mr. Etanyeor Ayuk',
+    position: 'Imformation System Engineer'
   },
   {
     id:3,
-    image: require('./Home_component/personel-3.jpg'),
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem repellendus eum perspiciatis perferendis, odio, porro ut eos ipsam quia possimus nam hic soluta suscipit, similique minus sequi voluptate rerum.",
-    name: 'Lebga Lesly',
-    position: 'customer'
+    image: require('./Home_component/testimonial_images/manager.jpg'),
+    description: "Well trained staff. Overall a positive experience in buying my phone at HTMobile. No complaints, bought my phone very easily here. Definitely worth a try.",
+    name: 'Mr. Willy',
+    position: 'Manager of FANCO'
   },
   {
     id:4,
-    image: require('./Home_component/personel-3.jpg'),
-    description: "HTMobile is a fantastic and one of a kind service. It has helped me to buy qaulity phones in a hassle free manner, multiple times. The service is vert convenient, with doorstep collection of phone, and immediate cash payment. The rates offered also are very competitive in the market.",
-    name: 'Lebga Lesly',
-    position: 'customer'
+    image: require('./Home_component/testimonial_images/prudencia.jpg'),
+    description: "HTMobile is a fantastic and one of a kind service. It has helped me to buy qaulity phones in a hassle free manner.",
+    name: 'Madam Prudencia Foyabo',
+    position: 'Lab TEchnician'
   },
   {
     id:5,
-    image: require('./Home_component/personel-3.jpg'),
-    description: "HTMobile is a fantastic and one of a kind service. It has helped me to buy qaulity phones in a hassle free manner, multiple times. The service is vert convenient, with doorstep collection of phone, and immediate cash payment. The rates offered also are very competitive in the market.",
-    name: 'Lebga Lesly',
-    position: 'customer'
-  },
-  {
-    image: require('./Home_component/personel-3.jpg'),
-    description: "HTMobile is a fantastic and one of a kind service. It has helped me to buy qaulity phones in a hassle free manner, multiple times. The service is vert convenient, with doorstep collection of phone, and immediate cash payment. The rates offered also are very competitive in the market.",
-    name: 'Lebga Lesly',
-    position: 'customer'
+    image: require('./Home_component/testimonial_images/kingley.jpg'),
+    description: "My friends have had to fight their parents for their first phone because their choices were costly. But I got the same phone as them at 25% cost because I bought from HTMobile",
+    name: 'Mr. Ambe Kingley',
+    position: "CEO of King's Cafe"
   }
 ]
 
@@ -126,7 +120,7 @@ export const Testimonial = [
 export const AboutPeople = [
   {
     id:1,
-    image:require('./About_component/about_image/personel-1.jpg'),
+    image:require('./About_component/about_image/personel-4.jpg'),
     name: 'Tafon Hubert',
     position: "Founder"
   },

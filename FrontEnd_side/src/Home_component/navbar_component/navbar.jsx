@@ -4,6 +4,7 @@ import './navbar.css'
 import { FaSearch, FaShoppingCart} from 'react-icons/fa'
 import { useLogout } from '../../authentication/useLogout'
 import { useAuthContext } from '../../authentication/useAuthContext'
+import { useSelector } from 'react-redux'
 
 export const Navbar = () =>{
 
@@ -14,6 +15,7 @@ export const Navbar = () =>{
     logout()
   }
 
+  const {cartTotalQuantity} = useSelector(state => state.cart)
   return(
     <>
       <div>
@@ -23,7 +25,11 @@ export const Navbar = () =>{
             <input type="text" placeholder="Search...." />
             <Link className='fasearch'><FaSearch /></Link> 
           </form>
-          <p className='cart'><a href="cart"><FaShoppingCart /></a></p>
+          <div className="nav-bag">
+            <p className='cart'><a href="cart"><FaShoppingCart /></a></p>
+            <span>{cartTotalQuantity}</span>
+          </div>
+          
           <div id="nav">
             {user && ( 
             <div id='logout'>

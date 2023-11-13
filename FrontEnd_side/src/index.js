@@ -5,7 +5,7 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
-import cartReducer from './Reducers/CartSlice';
+import cartReducer, { getTotals } from './Reducers/CartSlice';
 
 import { AuthContextProvider } from './Auth/authContext';
 
@@ -16,6 +16,7 @@ const store = configureStore({
   }
 })
 
+store.dispatch(getTotals())
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

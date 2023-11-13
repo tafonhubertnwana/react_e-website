@@ -6,6 +6,7 @@
   height: 100%;
   border-bottom: 1px solid #ffffff ;
   background: #1c1c1c;
+  padding: 20px 0;
 }
 
 .navbar .logo{
@@ -24,20 +25,20 @@
   display: flex;
   border-radius: 5px;
   background: #fafafa;
+  
 }
 
 .navbar form input{
   width: 100%;
   background-color: transparent;
-  height: 100%;
   border-style: none;
   outline: 10px;
   font-size: 18px;
+
 }
 
 .navbar .fasearch{
   padding: 13px 13px;
- 
   color: rgb(10, 10, 10);
   font-size: 20px;
   background-color: grey;
@@ -48,8 +49,17 @@
   background-color: #000000;
 }
 
-.navbar .cart{
-  padding-top: 13px;
+.nav-bag{
+  display: flex;
+}
+
+.nav-bag .cart{
+  padding-top: 10px;
+
+}
+
+.nav-bag span{
+  color: yellow;
 }
 
 .navbar .cart a{
