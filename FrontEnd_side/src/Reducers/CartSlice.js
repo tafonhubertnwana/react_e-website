@@ -21,7 +21,7 @@ const cartSlice = createSlice({
       if (itemIndex >= 0) {
         state.cartItems[itemIndex] = {
         ...state.cartItems[itemIndex],
-        cartQuantity: state.cartItems[itemIndex].cartQuantity + 1,
+        cartQuantity: state.cartItems[itemIndex].cartQuantity,
       };
         toast.info( `Increased ${state.cartItems[itemIndex].name} cart quantity`, {
           position: "bottom-left",

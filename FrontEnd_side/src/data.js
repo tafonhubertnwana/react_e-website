@@ -82,16 +82,16 @@ export const Testimonial = [
   {
     id:1,
     image: require('./Home_component/testimonial_images/cyrion.jpg'),
-    description: "The service is vert convenient, with doorstep collection of phone, and immediate cash payment. The rates offered also are very competitive in the market.",
+    description: "The service is very convenient, with doorstep collection of phone, and immediate cash payment. The rates offered also are very competitive in the market.",
     name: 'Mr. Cyrion',
     position: 'CEO of Press Perfect'
   },
   {
     id:2,
-    image: require('./Home_component/testimonial_images/arrey.jpg'),
+    image: require('./Home_component/testimonial_images/gaelle.jpg'),
     description: "It was a smooth transaction. The store manager was very helpful and the process was simple. Nice experience. Payment was very instant and the whole process was quick. Will recommend it.",
-    name: 'Mr. Etanyeor Ayuk',
-    position: 'Imformation System Engineer'
+    name: 'Madam Kongni Gaelle',
+    position: 'Manager of FINEX'
   },
   {
     id:3,
