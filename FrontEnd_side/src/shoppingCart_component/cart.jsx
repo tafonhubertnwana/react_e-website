@@ -3,35 +3,33 @@ import './cart.css'
 import Footer from '../Home_component/Footer_component/footer'
 import {useSelector, useDispatch } from "react-redux";
 import { Link} from 'react-router-dom';
-import { removeFromCart, decreaseCart, addToCart, clearCart, getTotals } from '../Reducers/CartSlice';
+import { removeFromCart, decreaseCart, increaseCart, clearCart, getTotals } from '../Reducers/CartSlice';
 
 
 
 
-function Cart() {
-  const cart = useSelector((state ) => state.cart);
-const dispatch = useDispatch()
+const Cart = () => {
+  const cart = useSelector((state) => state.cart);
+ 
+  const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getTotals());
-  }, [cart, dispatch])
+  }, [cart, dispatch]);
 
-  const handleRemoveFromCart = (product) => {
-    dispatch(removeFromCart(product));
-  }
-
-
+  
   const handleDecreaseCart = (product) => {
     dispatch(decreaseCart(product));
   };
-
-  const handleAddToCart = (product) => {
-    dispatch(addToCart(product))
-  }
-
+  const handleIncreaseCart = (product) => {
+    dispatch(increaseCart(product));
+  };
+  const handleRemoveFromCart = (product) => {
+    dispatch(removeFromCart(product));
+  };
   const handleClearCart = () => {
-    dispatch(clearCart())
-  }
+    dispatch(clearCart());
+  };  
 
   return (
     <>
@@ -46,7 +44,7 @@ const dispatch = useDispatch()
               </Link>
             </div>
           </div>
-        ) :(
+        ):(
           <div>
             <div className="titles">
               <h3 className='"product-title'>Product</h3>
@@ -55,7 +53,8 @@ const dispatch = useDispatch()
               <h3 className='total'>Total</h3>
             </div>
             <div className="cart-items">
-              {cart.cartItems?.map(cartItem => (
+              {cart.cartItems &&
+                cart.cartItems.map(cartItem => (
                 <div className="cart-item" key = {cartItem.id}>
                   <div className="cart-product">
                     <img src={cartItem.imageurl} alt={cartItem.name} />
@@ -69,7 +68,7 @@ const dispatch = useDispatch()
                   <div className="cart-product-quantity">
                     <button onClick = {() => handleDecreaseCart(cartItem)}>-</button>
                     <div className="count">{cartItem.cartQuantity}</div>
-                    <button onClick = {() => handleAddToCart(cartItem)}>+</button>
+                    <button onClick = {() => handleIncreaseCart(cartItem)}>+</button>
                   </div>
                   <div className="cart-product-total-price">
                     ${cartItem.price * cartItem.cartQuantity}
